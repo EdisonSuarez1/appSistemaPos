@@ -169,6 +169,7 @@
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
     <Content Include="docs\documentation.html" />
+    <Content Include="frmLogin.aspx" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
@@ -185,6 +186,13 @@
   <ItemGroup>
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Entidades\Class1.cs" />
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Logica\Class1.cs" />
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
