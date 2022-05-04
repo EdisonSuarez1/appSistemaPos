@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace appPlantilla.Presentacion
+namespace appPlantilla.Presentacion.pages
 {
-    public partial class frmBlankPage
+    public partial class frmPageBlank
     {
     }
 }
