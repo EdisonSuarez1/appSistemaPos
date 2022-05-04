@@ -169,15 +169,14 @@
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
     <Content Include="docs\documentation.html" />
-    <Content Include="Presentacion\frmBlankPage.aspx" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
+    <Content Include="Presentacion\pages\frmPageBlank.aspx" />
     <Content Include="Presentacion\pages\icons.html" />
     <Content Include="Presentacion\pages\map.html" />
     <Content Include="Presentacion\pages\notifications.html" />
     <Content Include="Presentacion\pages\profile.html" />
-    <Content Include="Presentacion\pages\sign-in.html" />
-    <Content Include="Presentacion\pages\sign-up.html" />
+    <Content Include="sign-in.html" />
     <Content Include="Presentacion\pages\tables.html" />
     <Content Include="Presentacion\pages\template.html" />
     <Content Include="Presentacion\pages\typography.html" />
@@ -187,12 +186,12 @@
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Entidades\Class1.cs" />
     <Compile Include="Logica\Class1.cs" />
-    <Compile Include="Presentacion\frmBlankPage.aspx.cs">
-      <DependentUpon>frmBlankPage.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmPageBlank.aspx.cs">
+      <DependentUpon>frmPageBlank.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmBlankPage.aspx.designer.cs">
-      <DependentUpon>frmBlankPage.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmPageBlank.aspx.designer.cs">
+      <DependentUpon>frmPageBlank.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
