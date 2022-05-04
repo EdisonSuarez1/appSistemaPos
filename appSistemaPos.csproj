@@ -184,6 +184,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\Class1.cs" />
+    <Compile Include="Entidades\Class1.cs" />
+    <Compile Include="Logica\Class1.cs" />
     <Compile Include="Presentacion\frmBlankPage.aspx.cs">
       <DependentUpon>frmBlankPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -391,11 +394,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="Entidades\" />
-    <Folder Include="Logica\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
