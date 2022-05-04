@@ -21,7 +21,7 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
-    <link id="pagestyle" href="../../assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
+    <link id="pagestyle" href="assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
 </head>
 
 <body class="bg-gray-200">
@@ -57,7 +57,7 @@
                                     </div>
                                  
                                     <div class="text-center">
-                                        <button type="button" class="btn bg-gradient-primary w-100 my-4 mb-2">Sign in</button>
+                                        <button type="button" class="btn bg-gradient-primary w-100 my-4 mb-2 ">Sign in</button>
                                     </div>
                                     
                                 </form>
@@ -107,10 +107,10 @@
         </div>
     </main>
     <!--   Core JS Files   -->
-    <script src="../../assets/js/core/popper.min.js"></script>
-    <script src="../../assets/js/core/bootstrap.min.js"></script>
-    <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="../../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
