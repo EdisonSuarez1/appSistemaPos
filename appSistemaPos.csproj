@@ -175,7 +175,6 @@
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
     <Content Include="Presentacion\pages\icons.html" />
     <Content Include="Presentacion\pages\map.html" />
-    <Content Include="Presentacion\pages\notifications.html" />
     <Content Include="Presentacion\pages\profile.html" />
     <Content Include="sign-in.html" />
     <Content Include="Presentacion\pages\tables.html" />
