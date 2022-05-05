@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace appPlantilla.Logica
+namespace appPlantilla.Datos
 {
-    public class Class1
+    public class clUsusariosD
     {
     }
 }

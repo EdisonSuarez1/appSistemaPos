@@ -184,7 +184,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\clConexion.cs" />
-    <Compile Include="Entidades\Class1.cs" />
+    <Compile Include="Datos\clUsusariosD.cs" />
+    <Compile Include="Entidades\clUsuariosE.cs" />
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,7 +193,7 @@
     <Compile Include="frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Logica\Class1.cs" />
+    <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
