@@ -184,7 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\clConexion.cs" />
-    <Compile Include="Datos\clUsusariosD.cs" />
+    <Compile Include="Datos\clUsuariosD.cs" />
     <Compile Include="Entidades\clUsuariosE.cs" />
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>

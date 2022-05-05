@@ -23,8 +23,9 @@
     <!-- CSS Files -->
     <link id="pagestyle" href="assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
 </head>
-
+    
 <body class="bg-gray-200">
+    <form id="form1" runat="server">
     <div class="container position-sticky z-index-sticky top-0">
         <div class="row">
             <div class="col-12">
@@ -46,26 +47,31 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form role="form" class="text-start" server="runat">
+                               
                                     <div class="input-group input-group-outline my-3">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" class="form-control">
+                                        <asp:TextBox ID="txtCorreo" runat="server" type="email" class="form-control"> </asp:TextBox>
                                     </div>
+
+
                                     <div class="input-group input-group-outline mb-3">
-                                        <label class="form-label">Password</label>
-                                        <input type="password" class="form-control">
+
+                                        <asp:TextBox ID="txtClave" runat="server" type="password" class="form-control"></asp:TextBox>
+
                                     </div>
-                                 
+
                                     <div class="text-center">
-                                        <button id="btnlogin" type="button" class="btn bg-gradient-primary w-100 my-4 mb-2 ">Acceder</button>
+                                        <asp:Button ID="btnLogin" type="button" class="btn bg-gradient-primary w-100 my-4 mb-2 " runat="server" OnClick="btnLogin_Click" Text="Acceder" />
+                                       
+
+                                        <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
                                     </div>
-                                    
-                                </form>
+
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></form>
             <footer class="footer position-absolute bottom-2 py-2 w-100">
                 <div class="container">
                     <div class="row align-items-center justify-content-lg-between">
@@ -79,7 +85,7 @@
                 hecho por <i class="fa fa-laptop" aria-hidden="true"></i>
                                 <a>JEY SOFTWARE 
                                 </a>
-                  
+
                                 para una mejor administración
                                 <i class="fa fa-store" aria-hidden="true"></i>
 
