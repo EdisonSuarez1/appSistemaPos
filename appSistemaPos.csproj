@@ -170,12 +170,14 @@
     <Content Include="assets\js\plugins\world.js" />
     <Content Include="docs\documentation.html" />
     <Content Include="frmLogin.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
     <Content Include="Presentacion\pages\icons.html" />
     <Content Include="Presentacion\pages\map.html" />
     <Content Include="Presentacion\pages\profile.html" />
+    <Content Include="Presentacion\pages\WebForm1.aspx" />
     <Content Include="sign-in.html" />
     <Content Include="Presentacion\pages\tables.html" />
     <Content Include="Presentacion\pages\template.html" />
@@ -193,6 +195,9 @@
     <Compile Include="frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
@@ -200,6 +205,13 @@
     </Compile>
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.designer.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

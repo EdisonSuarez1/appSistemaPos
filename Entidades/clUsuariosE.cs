@@ -15,6 +15,7 @@ namespace appPlantilla.Entidades
         public string fechaRegistro { get; set; }
         public int idSucursal { get; set; }
         public int idRol { get; set; }
+        public string descripcion { get; set; }
 
 
 
