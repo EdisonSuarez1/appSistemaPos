@@ -169,6 +169,7 @@
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
     <Content Include="docs\documentation.html" />
+    <Content Include="frmCliente.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Presentacion\pages\billing.html" />
@@ -188,9 +189,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\clClienteD.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clUsuariosD.cs" />
+    <Compile Include="Entidades\clClienteE.cs" />
     <Compile Include="Entidades\clUsuariosE.cs" />
+    <Compile Include="frmCliente.aspx.cs">
+      <DependentUpon>frmCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCliente.aspx.designer.cs">
+      <DependentUpon>frmCliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

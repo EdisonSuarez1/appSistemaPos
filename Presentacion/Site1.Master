@@ -38,21 +38,23 @@
             </a>
         </div>
         <hr class="horizontal light mt-0 mb-2">
-        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+        <div class="collapse navbar-collapse  w-auto max-height-vh-100" id="sidenav-collapse-main">
             <ul class="navbar-nav">
+
+
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="frmVentas.aspx">
+                    <a class="nav-link text-white " href="frmVentas.aspx active bg-gradient-primary">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">Table</i>
+                            <i class="material-icons opacity-10">receipt_long</i>
                         </div>
                         <span class="nav-link-text ms-1">Ventas</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="frmCliente.aspx">
+                    <a class="nav-link text-white  " href="frmCliente.aspx" >
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">Table</i>
+                            <i class="material-icons opacity-10">receipt_long</i>
                         </div>
                         <span class="nav-link-text ms-1">Cliente</span>
                     </a>
@@ -60,18 +62,18 @@
 
                 <li class="nav-item">
                     <a class="nav-link text-white active bg-gradient-primary" href="frmInventario.aspx">
-                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">Table</i>
+                        <div class="text-white text-left me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons  opacity-10">receipt_long</i>
                         </div>
-                        <span class="nav-link-text ms-1">Inventario</span>
+                        <span class="nav-link-text text-center  ms-1">Inventario</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="billing.html">
+                    <a class="nav-link text-white active bg-gradient-primary" href="billing.html">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">receipt_long</i>
                         </div>
-                        <span class="nav-link-text ms-1">Billing</span>
+                        <span class="nav-link-text ms-1">PPP</span>
                     </a>
                 </li>
 
