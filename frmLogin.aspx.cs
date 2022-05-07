@@ -28,9 +28,27 @@ namespace appPlantilla
             objDatosReci = objUsuariosL.mtdLogin(objDatos);
             if (objDatosReci != null)
             {
+            
+                Session["rol"] =  objDatosReci.descripcion;
+                if (Session["rol"].ToString() == "Vendedor")
+                {
+                    Response.Redirect("Presentacion/pages/frmPageBlank.aspx");
+                }
+                else if (Session["rol"].ToString() == "Inventarista") 
+                {
+                    Response.Redirect("Presentacion/pages/tables.html");
+                }
+                else if (Session["rol"].ToString() == "Administrador")
+                {
+                    Response.Redirect("Presentacion/pages/profile.html");
+                }
+                else
+                {
+                    Response.Redirect("Presentacion/pages/WebForm1.aspx");
 
-                Session["usuario"] = objDatosReci.nombres + " " + objDatosReci.apellidos;
-                Response.Redirect("Presentacion/pages/frmPageBlank.aspx");
+                }
+
+
 
 
 
