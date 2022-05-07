@@ -173,13 +173,16 @@
     <Content Include="Global.asax" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
+    <Content Include="Presentacion\pages\frmCliente.aspx" />
+    <Content Include="Presentacion\pages\frmInicio.aspx" />
+    <Content Include="Presentacion\pages\frmInventario.aspx" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
+    <Content Include="Presentacion\pages\frmVentas.aspx" />
     <Content Include="Presentacion\pages\icons.html" />
     <Content Include="Presentacion\pages\map.html" />
     <Content Include="Presentacion\pages\profile.html" />
     <Content Include="Presentacion\pages\WebForm1.aspx" />
     <Content Include="sign-in.html" />
-    <Content Include="Presentacion\pages\tables.html" />
     <Content Include="Presentacion\pages\template.html" />
     <Content Include="Presentacion\pages\typography.html" />
     <Content Include="Web.config" />
@@ -199,6 +202,27 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logica\clUsuariosL.cs" />
+    <Compile Include="Presentacion\pages\frmCliente.aspx.cs">
+      <DependentUpon>frmCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmCliente.aspx.designer.cs">
+      <DependentUpon>frmCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInicio.aspx.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInicio.aspx.designer.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInventario.aspx.cs">
+      <DependentUpon>frmInventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInventario.aspx.designer.cs">
+      <DependentUpon>frmInventario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -206,12 +230,12 @@
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.designer.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\pages\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmVentas.aspx.cs">
+      <DependentUpon>frmVentas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\pages\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmVentas.aspx.designer.cs">
+      <DependentUpon>frmVentas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
