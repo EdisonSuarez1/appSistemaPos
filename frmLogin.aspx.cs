@@ -39,6 +39,7 @@ namespace appPlantilla
                 ////Response es para llamar la pagina 
                 //Response.Redirect("presentacion/frmHome.aspx");
 
+
                 //establesco la paguina de inicio q quiero q me aparesca
 
 
