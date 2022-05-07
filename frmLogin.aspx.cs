@@ -36,7 +36,7 @@ namespace appPlantilla
                 }
                 else if (Session["rol"].ToString() == "Inventarista") 
                 {
-                    Response.Redirect("Presentacion/pages/tables.html");
+                    Response.Redirect("Presentacion/pages/frmVentas.aspx");
                 }
                 else if (Session["rol"].ToString() == "Administrador")
                 {
