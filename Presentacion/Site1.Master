@@ -37,22 +37,14 @@
                 <span class="ms-1 font-weight-bold text-white">Material Dashboard 2</span>
             </a>
         </div>
+<!---->
         <hr class="horizontal light mt-0 mb-2">
-        <div class="collapse navbar-collapse  w-auto max-height-vh-100" id="sidenav-collapse-main">
+        <div class="collapse navbar-collapse  w-auto min-height-vh-100" id="sidenav-collapse-main">
             <ul class="navbar-nav">
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="frmVentas.aspx active bg-gradient-primary">
-                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons opacity-10">receipt_long</i>
-                        </div>
-                        <span class="nav-link-text ms-1">Ventas</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white  " href="frmCliente.aspx" >
+                    <a class="nav-link text-white " href="frmCliente.aspx">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">receipt_long</i>
                         </div>
@@ -61,22 +53,57 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white active bg-gradient-primary" href="frmInventario.aspx">
-                        <div class="text-white text-left me-2 d-flex align-items-center justify-content-center">
-                            <i class="material-icons  opacity-10">receipt_long</i>
-                        </div>
-                        <span class="nav-link-text text-center  ms-1">Inventario</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white active bg-gradient-primary" href="billing.html">
+                    <a class="nav-link text-white " href="frmCompra.aspx">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">receipt_long</i>
                         </div>
-                        <span class="nav-link-text ms-1">PPP</span>
+                        <span class="nav-link-text ms-1">Compra</span>
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link text-white  " href="frmInventario.aspx" >
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">receipt_long</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Inventario</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-primary" href="frmPageBlank.aspx">
+                        <div class="text-white text-left me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons  opacity-10">receipt_long</i>
+                        </div>
+                        <span class="nav-link-text text-center  ms-1">Page Blank</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="frmProveedores.aspx">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">receipt_long</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Provedores</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="frmUsuarios.aspx">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">receipt_long</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Usuarios</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="frmVentas.aspx">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">receipt_long</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Ventas</span>
+                    </a>
+                </li>
 
 
                 <li class="nav-item mt-3">
@@ -90,6 +117,16 @@
                         <span class="nav-link-text ms-1">Profile</span>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="profile.html">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">person</i>
+                        </div>
+                        <span class="nav-link-text ms-1">Profile</span>
+                    </a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-white " href="sign-in.html">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -108,7 +145,7 @@
                 </li>
             </ul>
         </div>
-
+<!---->
 
     </aside>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">

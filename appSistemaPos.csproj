@@ -175,9 +175,12 @@
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
     <Content Include="Presentacion\pages\frmCliente.aspx" />
+    <Content Include="Presentacion\pages\frmCompra.aspx" />
     <Content Include="Presentacion\pages\frmInicio.aspx" />
     <Content Include="Presentacion\pages\frmInventario.aspx" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
+    <Content Include="Presentacion\pages\frmProveedores.aspx" />
+    <Content Include="Presentacion\pages\frmUsuarios.aspx" />
     <Content Include="Presentacion\pages\frmVentas.aspx" />
     <Content Include="Presentacion\pages\icons.html" />
     <Content Include="Presentacion\pages\map.html" />
@@ -219,6 +222,13 @@
     <Compile Include="Presentacion\pages\frmCliente.aspx.designer.cs">
       <DependentUpon>frmCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\pages\frmCompra.aspx.cs">
+      <DependentUpon>frmCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmCompra.aspx.designer.cs">
+      <DependentUpon>frmCompra.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\pages\frmInicio.aspx.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,6 +249,20 @@
     </Compile>
     <Compile Include="Presentacion\pages\frmPageBlank.aspx.designer.cs">
       <DependentUpon>frmPageBlank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmProveedores.aspx.cs">
+      <DependentUpon>frmProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmProveedores.aspx.designer.cs">
+      <DependentUpon>frmProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmUsuarios.aspx.cs">
+      <DependentUpon>frmUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmUsuarios.aspx.designer.cs">
+      <DependentUpon>frmUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\pages\frmVentas.aspx.cs">
       <DependentUpon>frmVentas.aspx</DependentUpon>
