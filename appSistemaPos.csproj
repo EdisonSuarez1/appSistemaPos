@@ -176,8 +176,9 @@
     <Content Include="Imagenes\road-4878453_1920.jpg" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
-    <Content Include="Presentacion\pages\frmCliente.aspx" />
-    <Content Include="Presentacion\pages\frmCompra.aspx" />
+    <Content Include="Presentacion\pages\frmClientes.aspx" />
+    <Content Include="Presentacion\pages\frmCompras.aspx" />
+    <Content Include="Presentacion\pages\frmDevoluciones.aspx" />
     <Content Include="Presentacion\pages\frmInicio.aspx" />
     <Content Include="Presentacion\pages\frmInventario.aspx" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
@@ -217,19 +218,26 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logica\clUsuariosL.cs" />
-    <Compile Include="Presentacion\pages\frmCliente.aspx.cs">
-      <DependentUpon>frmCliente.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmClientes.aspx.cs">
+      <DependentUpon>frmClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\pages\frmCliente.aspx.designer.cs">
-      <DependentUpon>frmCliente.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmClientes.aspx.designer.cs">
+      <DependentUpon>frmClientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\pages\frmCompra.aspx.cs">
-      <DependentUpon>frmCompra.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmCompras.aspx.cs">
+      <DependentUpon>frmCompras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\pages\frmCompra.aspx.designer.cs">
-      <DependentUpon>frmCompra.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmCompras.aspx.designer.cs">
+      <DependentUpon>frmCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmDevoluciones.aspx.cs">
+      <DependentUpon>frmDevoluciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmDevoluciones.aspx.designer.cs">
+      <DependentUpon>frmDevoluciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\pages\frmInicio.aspx.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
