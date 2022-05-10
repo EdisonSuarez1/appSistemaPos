@@ -33,7 +33,7 @@
             </div>
         </div>
         <main class="main-content  mt-0">
-            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://img.freepik.com/vector-gratis/circuitos-fondo-digital-degradado-azul-rojo_23-2148821701.jpg?t=st=1652223696~exp=1652224296~hmac=c287655bd449a62646f9a89a64687f420aff89d800258de9294ba7a27ae1a045&w=1380');">
+            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://wallpapercave.com/wp/wp2655171.jpg');">
                 <span class="mask bg-gradient-dark opacity-5"></span>
                 <div class="container my-auto">
                     <div class="row">
