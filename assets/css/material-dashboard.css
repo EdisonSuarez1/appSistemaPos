@@ -109,11 +109,12 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #344767;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+   
+    color: #344767;
 }
 
 h1,
@@ -3007,11 +3008,11 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-  background-image: linear-gradient(195deg, #EC407A 0%, #D81B60 100%);
+  background-image: linear-gradient(195deg, #EC407A 10%, #D81B60 100%);
 }
 
 .form-check-input:checked[type="radio"] {
-  background-image: linear-gradient(195deg, #EC407A 0%, #D81B60 100%);
+  background-image: linear-gradient(195deg, #EC407A 10%, #D81B60 100%);
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
@@ -5569,7 +5570,7 @@ fieldset:disabled .btn {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
+/*Modelo login*/
 .card {
   position: relative;
   display: flex;
@@ -19853,11 +19854,11 @@ fieldset:disabled .btn {
 }
 
 .alert-secondary {
-  background-image: linear-gradient(195deg, #747b8a 0%, #495361 100%);
+  background-image: linear-gradient(195deg, #4CAF50 10%, #495361 100%);
 }
 
 .alert-success {
-  background-image: linear-gradient(195deg, #66BB6A 0%, #43A047 100%);
+  background-image: linear-gradient(195deg, #66BB6A 0%, #FFA726 100%);
 }
 
 .alert-info {
@@ -20592,17 +20593,17 @@ fieldset:disabled .btn {
 
 .btn-dark,
 .btn.bg-gradient-dark {
-  color: #fff;
+  color: #0024fb;
 }
 
 .btn-dark:hover,
 .btn.bg-gradient-dark:hover {
-  color: #fff;
+  color: #1A73E8;
 }
 
 .btn-light,
 .btn.bg-gradient-light {
-  color: #3A416F;
+  color: #1A73E8;
 }
 
 .btn-light:hover,
@@ -21070,7 +21071,7 @@ fieldset:disabled .btn {
 
 .dark-version .fixed-plugin .btn.bg-gradient-dark,
 .dark-version .fixed-plugin .btn.btn-outline-dark {
-  color: #fff !important;
+  color: #d12121 !important;
   border: 1px solid #fff !important;
 }
 
@@ -21660,7 +21661,7 @@ body.dark-version {
   background-color: transparent;
   background-image: none;
   border: 1px solid #344767;
-  color: #344767;
+  color: #F44335;
 }
 
 .fixed-plugin.show .card {
@@ -22228,7 +22229,7 @@ label,
 .bg-gradient-light {
   background-image: linear-gradient(195deg, #EBEFF4 0%, #CED4DA 100%);
 }
-
+/*Cambiar cuadro del menu*/
 .bg-gradient-dark {
   background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
 }

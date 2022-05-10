@@ -33,8 +33,8 @@
             </div>
         </div>
         <main class="main-content  mt-0">
-            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://img.freepik.com/vector-gratis/grafico-tierra-3d-que-simboliza-ilustracion-comercio-mundial_456031-125.jpg?t=st=1652149142~exp=1652149742~hmac=f2cee752862589b5727084657578b8feab6ca6eae017377183a4151c67ce1545&w=1480');">
-                <span class="mask bg-gradient-dark opacity-7"></span>
+            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://img.freepik.com/vector-gratis/circuitos-fondo-digital-degradado-azul-rojo_23-2148821701.jpg?t=st=1652223696~exp=1652224296~hmac=c287655bd449a62646f9a89a64687f420aff89d800258de9294ba7a27ae1a045&w=1380');">
+                <span class="mask bg-gradient-dark opacity-5"></span>
                 <div class="container my-auto">
                     <div class="row">
                         <div class="col-lg-4 col-md-8 col-12 mx-auto">
