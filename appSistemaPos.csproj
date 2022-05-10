@@ -169,23 +169,29 @@
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
     <Content Include="docs\documentation.html" />
-    <Content Include="frmCliente.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Imagenes\road-4878453.jpg" />
+    <Content Include="Imagenes\road-4878453_1920.jpg" />
+    <Content Include="Presentacion\frmReportes.aspx" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
     <Content Include="Presentacion\pages\frmClientes.aspx" />
     <Content Include="Presentacion\pages\frmCompras.aspx" />
     <Content Include="Presentacion\pages\frmDevoluciones.aspx" />
-    <Content Include="Presentacion\pages\frmInicio.aspx" />
+    <Content Include="Presentacion\pages\frmInicioInventarista.aspx" />
+    <Content Include="Presentacion\pages\frmInicioAdministrador.aspx" />
+    <Content Include="Presentacion\pages\frmInicioVendedor.aspx" />
     <Content Include="Presentacion\pages\frmInventario.aspx" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
     <Content Include="Presentacion\pages\frmProveedores.aspx" />
+    <Content Include="Presentacion\pages\frmTable.aspx" />
     <Content Include="Presentacion\pages\frmUsuarios.aspx" />
     <Content Include="Presentacion\pages\frmVentas.aspx" />
     <Content Include="Presentacion\pages\icons.html" />
     <Content Include="Presentacion\pages\map.html" />
     <Content Include="Presentacion\pages\profile.html" />
+    <Content Include="Presentacion\pages\tables.html" />
     <Content Include="Presentacion\pages\WebForm1.aspx" />
     <Content Include="sign-in.html" />
     <Content Include="Presentacion\pages\template.html" />
@@ -196,15 +202,10 @@
     <Compile Include="Datos\clClienteD.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clUsuariosD.cs" />
+    <Compile Include="Datos\clVentaD.cs" />
     <Compile Include="Entidades\clClienteE.cs" />
     <Compile Include="Entidades\clUsuariosE.cs" />
-    <Compile Include="frmCliente.aspx.cs">
-      <DependentUpon>frmCliente.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="frmCliente.aspx.designer.cs">
-      <DependentUpon>frmCliente.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Entidades\clVentaE.cs" />
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,6 +217,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logica\clUsuariosL.cs" />
+    <Compile Include="Logica\clVentaL.cs" />
+    <Compile Include="Presentacion\frmReportes.aspx.cs">
+      <DependentUpon>frmReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmReportes.aspx.designer.cs">
+      <DependentUpon>frmReportes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\pages\frmClientes.aspx.cs">
       <DependentUpon>frmClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -237,12 +246,26 @@
     <Compile Include="Presentacion\pages\frmDevoluciones.aspx.designer.cs">
       <DependentUpon>frmDevoluciones.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\pages\frmInicio.aspx.cs">
-      <DependentUpon>frmInicio.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmInicioInventarista.aspx.cs">
+      <DependentUpon>frmInicioInventarista.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\pages\frmInicio.aspx.designer.cs">
-      <DependentUpon>frmInicio.aspx</DependentUpon>
+    <Compile Include="Presentacion\pages\frmInicioInventarista.aspx.designer.cs">
+      <DependentUpon>frmInicioInventarista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInicioAdministrador.aspx.cs">
+      <DependentUpon>frmInicioAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInicioAdministrador.aspx.designer.cs">
+      <DependentUpon>frmInicioAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInicioVendedor.aspx.cs">
+      <DependentUpon>frmInicioVendedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmInicioVendedor.aspx.designer.cs">
+      <DependentUpon>frmInicioVendedor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\pages\frmInventario.aspx.cs">
       <DependentUpon>frmInventario.aspx</DependentUpon>
@@ -264,6 +287,13 @@
     </Compile>
     <Compile Include="Presentacion\pages\frmProveedores.aspx.designer.cs">
       <DependentUpon>frmProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmTable.aspx.cs">
+      <DependentUpon>frmTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmTable.aspx.designer.cs">
+      <DependentUpon>frmTable.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\pages\frmUsuarios.aspx.cs">
       <DependentUpon>frmUsuarios.aspx</DependentUpon>

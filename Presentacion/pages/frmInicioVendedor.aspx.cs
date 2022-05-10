@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace appPlantilla.Presentacion.pages
 {
-    public partial class frmInicio : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class frmInicioVendedor : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }
