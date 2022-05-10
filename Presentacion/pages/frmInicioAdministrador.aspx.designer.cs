@@ -11,7 +11,7 @@ namespace appPlantilla.Presentacion.pages
 {
 
 
-    public partial class frmVentas
+    public partial class frmInicioAdministrador
     {
     }
 }

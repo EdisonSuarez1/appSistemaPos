@@ -33,15 +33,15 @@ namespace appPlantilla
                 Session["rol"] = objDatosReci.descripcion;
                 if (Session["rol"].ToString() == "Vendedor")
                 {
-                    Response.Redirect("Presentacion/pages/frmPageBlank.aspx");
+                    Response.Redirect("Presentacion/pages/frmInicioVendedor.aspx");
                 }
                 else if (Session["rol"].ToString() == "Inventarista")
                 {
-                    Response.Redirect("Presentacion/pages/frmVentas.aspx");
+                    Response.Redirect("Presentacion/pages/frmInicioInventarista.aspx");
                 }
                 else if (Session["rol"].ToString() == "Administrador")
                 {
-                    Response.Redirect("Presentacion/pages/profile.html");
+                    Response.Redirect("Presentacion/pages/frmInicioAdministrador.aspx");
                 }
                 else
                 {
