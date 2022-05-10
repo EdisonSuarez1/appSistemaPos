@@ -33,8 +33,8 @@
             </div>
         </div>
         <main class="main-content  mt-0">
-            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');">
-                <span class="mask bg-gradient-dark opacity-6"></span>
+            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://img.freepik.com/vector-gratis/grafico-tierra-3d-que-simboliza-ilustracion-comercio-mundial_456031-125.jpg?t=st=1652149142~exp=1652149742~hmac=f2cee752862589b5727084657578b8feab6ca6eae017377183a4151c67ce1545&w=1480');">
+                <span class="mask bg-gradient-dark opacity-7"></span>
                 <div class="container my-auto">
                     <div class="row">
                         <div class="col-lg-4 col-md-8 col-12 mx-auto">
@@ -46,16 +46,27 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-body">
 
-                                    <div class="input-group input-group-outline my-3">
-                                        <asp:TextBox ID="txtCorreo" runat="server" type="email" class="form-control"> </asp:TextBox>
-                                    </div>
 
-                                    <asp:Label ID="lblRol" runat="server" Text="Label"> </asp:Label>
+
+                                    <h10>
+
+                                        <asp:Label ID="lblCorreo" runat="server" Text="Ingresa Correo"> </asp:Label></h10>
+
+
                                     <div class="input-group input-group-outline mb-3">
 
-                                        <asp:TextBox ID="txtClave" runat="server" type="password" class="form-control"></asp:TextBox>
+                                        <asp:TextBox PlaceHolder="Correo" ID="txtCorreo" runat="server" type="email" class="form-control"> </asp:TextBox>
+                                    </div>
+
+                                    <h10>
+                                        <asp:Label ID="lblRol" runat="server" Text="Ingresa Contraseña"> </asp:Label></h10>
+
+                                    <div class="input-group input-group-outline mb-3">
+
+                                        <asp:TextBox PlaceHolder="Contraseña" ID="txtClave" runat="server" type="password" class="form-control"></asp:TextBox>
 
                                     </div>
 

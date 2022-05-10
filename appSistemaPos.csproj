@@ -172,6 +172,8 @@
     <Content Include="frmCliente.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Imagenes\road-4878453.jpg" />
+    <Content Include="Imagenes\road-4878453_1920.jpg" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
     <Content Include="Presentacion\pages\frmCliente.aspx" />
