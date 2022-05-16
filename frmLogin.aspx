@@ -7,8 +7,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/login.png">
+    <link rel="icon" type="image/png" href="../../assets/img/login.png">
     <title>Login...
     </title>
     <!--     Fonts and icons     -->
@@ -33,7 +33,7 @@
             </div>
         </div>
         <main class="main-content  mt-0">
-            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://wallpapercave.com/wp/wp2655171.jpg');">
+            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://wallpapercave.com/wp/wp2736652.gif');">
                 <span class="mask bg-gradient-dark opacity-5"></span>
                 <div class="container my-auto">
                     <div class="row">
@@ -53,7 +53,7 @@
 
                                     <h10>
 
-                                        <asp:Label ID="lblCorreo" runat="server" Text="Ingresa Correo"> </asp:Label></h10>
+                                        <h4><asp:Label ID="lblCorreo" runat="server" Text="Ingresa Correo"> </asp:Label></h4>
 
 
                                     <div class="input-group input-group-outline mb-3">
@@ -74,7 +74,7 @@
                                         <asp:Button ID="btnLogin" type="button" class="btn bg-gradient-primary w-100 my-4 mb-2 " runat="server" OnClick="btnLogin_Click" Text="Acceder" />
 
 
-                                        <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
+                                       <h6><asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label></h6> 
                                     </div>
 
 

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace appPlantilla.Presentacion.pages
 {
-	public partial class frmInventarista : System.Web.UI.Page
+	public partial class frmInicioInventarista : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
