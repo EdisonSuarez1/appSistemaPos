@@ -736,17 +736,7 @@ progress {
 
 .row {
     --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-.row2 {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 7rem;
+    --bs-gutter-y: 5rem;
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(1 * var(--bs-gutter-y));
@@ -5651,7 +5641,7 @@ fieldset:disabled .btn {
 }
 
     .card-header:first-child {
-        border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+        border-radius: 0.75rem 0.75rem 0 0;
     }
 
 .card-footer {
@@ -9269,25 +9259,6 @@ fieldset:disabled .btn {
   margin-bottom: 16rem !important;
 }
 
-.mb-13 {
-    margin-bottom: 1rem;
-    margin-top: -6rem;
-    margin-right: -0.1rem;
-}
-
-.mb-14 {
-    margin-bottom: 3.2rem;
-    margin-top: -1rem;
-    margin-right: 2rem;
-}
-
-.mb-15 {
-    margin-bottom: 3.2rem;
-    margin-top: -1rem;
-    margin-right: -0.7rem;
-}
-
-
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -9529,7 +9500,7 @@ fieldset:disabled .btn {
 }
 
 .mt-n4 {
-    margin-top: -1.5rem !important;
+    margin-top: -9rem !important;
     margin-left: -3rem;
 }
 
@@ -9563,11 +9534,6 @@ fieldset:disabled .btn {
 
 .mt-n12 {
   margin-top: -16rem !important;
-}
-
-.mt-n13 {
-    margin-top: -9rem !important;
-    margin-left: -3rem;
 }
 
 .me-n1 {
@@ -25546,10 +25512,6 @@ p,
 
 .text-sm {
   font-size: 0.875rem !important;
-}
-
-.text-smm {
-    font-size: 2.1rem !important;
 }
 
 .text-xs {
