@@ -73,7 +73,7 @@
                         <div class="card">
                             <div class="card-header p-3 pt-9">
                                 <div class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n13 position-absolute">
-                                    <i class="material-icons opacity-10">assignment_return</i>
+                                    <i class="material-icons opacity-10">inventory</i>
                                 </div>
                                 <div class="text-end pt-1">
                                     <p class="text-smm mb-13 text-capitalize">MODULO</p>
