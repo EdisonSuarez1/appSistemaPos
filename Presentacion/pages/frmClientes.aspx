@@ -4,15 +4,17 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <body>
+
     <div class="rom m-4">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-13 offset-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h1 > <center>POS PYMES</center></h1>
+                    <h1>l
+                        <center>POS PYMES</center>
+                    </h1>
                 </div>
                 <div class="card-body">
-                    <table class="display responsive nowrap" id="mytable" style="width:100%">
+                    <table class="display responsive nowrap" id="mytable" style="width: 100%">
                         <thead>
                             <tr>
                                 <th>idCliente</th>
@@ -45,8 +47,6 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-12">
-
-
                             <input type="text" id="txtidArticulo" />
                             <div class="form-group">
                                 <label for="txtNombre">Nombre:</label>
@@ -64,10 +64,10 @@
                                 <label for="txtDescripcion">Descripcion:</label>
                                 <input type="text" class="form-control" id="txtDescripcion">
                             </div>
-
-
                         </div>
                     </div>
-        
-
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
