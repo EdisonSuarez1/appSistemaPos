@@ -9567,7 +9567,7 @@ fieldset:disabled .btn {
 
 .mt-n13 {
     margin-top: -9rem !important;
-    margin-left: -3rem;
+    margin-left: -4rem;
 }
 
 .me-n1 {
@@ -22439,14 +22439,15 @@ label,
 }
 
 .icon-lg {
-  width: 64px;
-  height: 64px;
+  width: 200px;
+  height: 200px;
 }
 
-.icon-lg i {
-  top: 31%;
-  font-size: 1.5rem;
-}
+    .icon-lg i {
+        top: 31%;
+        font-size: 9rem;
+        margin-top: -2rem;
+    }
 
 .icon-lg.icon-striped {
   background-position-x: 111px;
