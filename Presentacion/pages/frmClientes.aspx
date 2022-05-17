@@ -15,12 +15,12 @@
                         <thead>
                             <tr>
                                 <th>idCliente</th>
-                                <th>tipoDocumento</th>
-                                <th>numeroDocumento</th>
-                                <th>nombre</th>
-                                <th>direccion</th>
-                                <th>telefono</th>
-                                <th>fechaRegistro</th>
+                                <th>Tipo Documento</th>
+                                <th>Numero Documento</th>
+                                <th>Nombre</th>
+                                <th>Direccion</th>
+                                <th>Telefono</th>
+                                <th>Fecha Registro</th>
                                 <th>Acciones</th>
 
                             </tr>
