@@ -31,9 +31,10 @@
                 <div class="col-12">
                 </div>
             </div>
+           
         </div>
         <main class="main-content  mt-0">
-            <div class="page-header align-items-start min-vh-100" style="background-image: url('https://wallpapercave.com/wp/wp2736652.gif');">
+            <div class="page-header align-items-start min-vh-100" style="background-image: url(' https://wallpapercave.com/wp/wp2736652.gif');">
                 <span class="mask bg-gradient-dark opacity-5"></span>
                 <div class="container my-auto">
                     <div class="row">
@@ -53,7 +54,7 @@
 
                                     <h10>
 
-                                        <h4><asp:Label ID="lblCorreo" runat="server" Text="Ingresa Correo"> </asp:Label></h4>
+                                        <h10><asp:Label ID="lblCorreo" runat="server" Text="Ingresa Correo"> </asp:Label></h10>
 
 
                                     <div class="input-group input-group-outline mb-3">
