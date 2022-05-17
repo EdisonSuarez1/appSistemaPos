@@ -216,6 +216,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logica\clCliente.cs" />
     <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Logica\clVentaL.cs" />
     <Compile Include="Presentacion\frmReportes.aspx.cs">
