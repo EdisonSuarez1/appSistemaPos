@@ -18,6 +18,7 @@ namespace appPlantilla.Datos
         public clConexion()
         {
             conexion = new SqlConnection("Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
+
             conexion.Open();
 
         }
