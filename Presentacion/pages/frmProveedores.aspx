@@ -65,7 +65,32 @@
                 <asp:Button ID="btnRegistrar"  CssClass="btn btn-secundary"  runat="server"  Text="Registar Usuario" OnClick="btnRegistrar_Click" />
                    
 
-    
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="idProveedor" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                        <ItemTemplate>
+                            idProveedor:
+                            <asp:Label ID="idProveedorLabel" runat="server" Text='<%# Eval("idProveedor") %>' />
+                            <br />
+                            nit:
+                            <asp:Label ID="nitLabel" runat="server" Text='<%# Eval("nit") %>' />
+                            <br />
+                            razonSocial:
+                            <asp:Label ID="razonSocialLabel" runat="server" Text='<%# Eval("razonSocial") %>' />
+                            <br />
+                            telefono:
+                            <asp:Label ID="telefonoLabel" runat="server" Text='<%# Eval("telefono") %>' />
+                            <br />
+                            correo:
+                            <asp:Label ID="correoLabel" runat="server" Text='<%# Eval("correo") %>' />
+                            <br />
+                            direccion:
+                            <asp:Label ID="direccionLabel" runat="server" Text='<%# Eval("direccion") %>' />
+                            <br />
+<br />
+                        </ItemTemplate>
+                    </asp:DataList>
+          
+
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bdPymesConnectionString %>" SelectCommand="SELECT * FROM [proveedor]"></asp:SqlDataSource>
           
 
                 </div>

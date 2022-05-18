@@ -51,6 +51,11 @@ namespace appPlantilla.Presentacion.pages
 
             Response.Redirect("~/frmLogin.aspx");
         }
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     
