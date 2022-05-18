@@ -22,7 +22,7 @@ namespace appPlantilla
             clUsuariosE objDatos = new clUsuariosE();
             objDatos.correo = txtCorreo.Text;
             objDatos.clave = txtClave.Text;
-
+            
             clUsuariosL objUsuariosL = new clUsuariosL();
             clUsuariosE objDatosReci = new clUsuariosE();
             objDatosReci = objUsuariosL.mtdLogin(objDatos);
@@ -45,8 +45,7 @@ namespace appPlantilla
                 }
                 else
                 {
-                    Response.Redirect("Presentacion/pages/WebForm1.aspx");
-
+                    lblMensaje.Text = "usuario no Registrado ";
                 }
 
 

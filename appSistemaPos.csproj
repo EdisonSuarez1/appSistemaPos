@@ -201,9 +201,11 @@
   <ItemGroup>
     <Compile Include="Datos\clClienteD.cs" />
     <Compile Include="Datos\clConexion.cs" />
+    <Compile Include="Datos\clProveedoresD.cs" />
     <Compile Include="Datos\clUsuariosD.cs" />
     <Compile Include="Datos\clVentaD.cs" />
     <Compile Include="Entidades\clClienteE.cs" />
+    <Compile Include="Entidades\clProveedoresE.cs" />
     <Compile Include="Entidades\clUsuariosE.cs" />
     <Compile Include="Entidades\clVentaE.cs" />
     <Compile Include="frmLogin.aspx.cs">
@@ -217,6 +219,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logica\clCliente.cs" />
+    <Compile Include="Logica\clProveedoresL.cs" />
     <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Logica\clVentaL.cs" />
     <Compile Include="Presentacion\frmReportes.aspx.cs">
