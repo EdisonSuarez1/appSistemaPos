@@ -34,9 +34,10 @@ namespace appPlantilla.Presentacion.pages
             if (filas > 0)
 
             {
-                lblMensaje.Text = "usuario Registrado ";
+                Response.Redirect("frmProveedores.aspx");
+            
 
-            }
+        }
             else
             {
                 lblMensaje.Text = "usuario no Registrado ";
@@ -54,7 +55,7 @@ namespace appPlantilla.Presentacion.pages
 
         protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+          
         }
     }
 }

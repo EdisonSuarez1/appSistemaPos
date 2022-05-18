@@ -65,7 +65,11 @@
                 <asp:Button ID="btnRegistrar"  CssClass="btn btn-secundary"  runat="server"  Text="Registar Usuario" OnClick="btnRegistrar_Click" />
                    
 
-                    <asp:DataList ID="DataList1" runat="server" DataKeyField="idProveedor" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="idProveedor" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" GridLines="Vertical">
+                        <AlternatingItemStyle BackColor="White" />
+                        <FooterStyle BackColor="#CCCC99" />
+                        <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                        <ItemStyle BackColor="#F7F7DE" />
                         <ItemTemplate>
                             idProveedor:
                             <asp:Label ID="idProveedorLabel" runat="server" Text='<%# Eval("idProveedor") %>' />
@@ -87,6 +91,7 @@
                             <br />
 <br />
                         </ItemTemplate>
+                        <SelectedItemStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
                     </asp:DataList>
           
 
