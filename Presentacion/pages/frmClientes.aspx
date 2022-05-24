@@ -6,12 +6,12 @@
 
 
     <div class="rom m-4">
-        <div class="col-sm-12 col-md-13 offset-md-12">
+        <div class="col-sm-11 col-md-14 offset-md-13">
             <div class="card">
                 <div class="card-header">
-                    <h1>l
+                    <h1>
                         <center>POS PYMES</center>
-                    </h1>
+                   </h1>
                 </div>
                 <div class="card-body">
                     <table class="display responsive nowrap" id="mytable" style="width: 100%">

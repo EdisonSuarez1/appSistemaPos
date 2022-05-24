@@ -1438,7 +1438,7 @@ progress {
 
     .col-md-14 {
         flex: 0 0 auto;
-        width: 84%;
+        width: 88%;
     }
 
     .offset-md-0 {
@@ -1494,7 +1494,8 @@ progress {
     }
 
     .offset-md-13 {
-        margin-left: 15%;
+        margin-left: 11%;
+        margin-top: 1%;
     }
 
     .g-md-0,

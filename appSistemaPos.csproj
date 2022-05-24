@@ -173,7 +173,7 @@
     <Content Include="Global.asax" />
     <Content Include="Imagenes\road-4878453.jpg" />
     <Content Include="Imagenes\road-4878453_1920.jpg" />
-    <Content Include="Presentacion\frmReportes.aspx" />
+    <Content Include="Presentacion\pages\frmReportes.aspx" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
     <Content Include="Presentacion\pages\frmClientes.aspx" />
@@ -222,11 +222,11 @@
     <Compile Include="Logica\clProveedoresL.cs" />
     <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Logica\clVentaL.cs" />
-    <Compile Include="Presentacion\frmReportes.aspx.cs">
+    <Compile Include="Presentacion\pages\frmReportes.aspx.cs">
       <DependentUpon>frmReportes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmReportes.aspx.designer.cs">
+    <Compile Include="Presentacion\pages\frmReportes.aspx.designer.cs">
       <DependentUpon>frmReportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\pages\frmClientes.aspx.cs">

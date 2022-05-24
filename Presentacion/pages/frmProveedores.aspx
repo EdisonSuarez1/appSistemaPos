@@ -3,100 +3,106 @@
 </asp:Content>
 
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"><center>HOLA GAMER</center>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-     <link rel =" stylesheet" href ="../Content/bootstrap.min.css" type =" text/css" />
-
-
-    
-    <form id="form1" runat="server">
-       
-
-
-
-         <div class="container">
-
-
-            <div class="col offset-6 col-md-6 mt-5">
-                
-            <div class ="card car-body login-card-body"> 
-
-                <h1>        </h1>
-
-
-                <div class="mb-6 mt-6">
-                    <label for="nit" class="form-label">nit:</label>
-
-                    <asp:TextBox ID="txtDocumento" runat="server" CssClass="form-control" placeholder="nit" TextMode="Number"></asp:TextBox>
-
-
-                     <label for="razonSocial" class="form-label">razonSocial:</label>
-
-                    <asp:TextBox ID="txtNombres" runat="server" CssClass="form-control" placeholder="razonSocial " TextMode="MultiLine"></asp:TextBox>
-
-
-                     <label for="telefono " class="form-label">apellidos :</label>
-
-                    <asp:TextBox ID="txtApellidos" runat="server" CssClass="form-control" placeholder="telefono " TextMode="MultiLine"></asp:TextBox>
-
-                     <label for="correo " class="form-label">correo :</label>
-
-                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="correo " TextMode="Email"></asp:TextBox>
-
-                          <label for="direccion " class="form-label">direccion :</label>
-
-                    <asp:TextBox ID="txtdir" runat="server" CssClass="form-control" placeholder="direccion " TextMode="Multiline"></asp:TextBox>
-
-
-                    
-                </div>
-           
-
-                <div class=" col mt-3 mb-3">
-                  
-                    <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
-                   
-
-
-               
-
-                <asp:Button ID="btnRegistrar"  CssClass="btn btn-secundary"  runat="server"  Text="Registar Usuario" OnClick="btnRegistrar_Click" />
-                   
-
-                    <asp:DataList ID="DataList1" runat="server" DataKeyField="idProveedor" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
-                        <ItemTemplate>
-                            idProveedor:
-                            <asp:Label ID="idProveedorLabel" runat="server" Text='<%# Eval("idProveedor") %>' />
-                            <br />
-                            nit:
-                            <asp:Label ID="nitLabel" runat="server" Text='<%# Eval("nit") %>' />
-                            <br />
-                            razonSocial:
-                            <asp:Label ID="razonSocialLabel" runat="server" Text='<%# Eval("razonSocial") %>' />
-                            <br />
-                            telefono:
-                            <asp:Label ID="telefonoLabel" runat="server" Text='<%# Eval("telefono") %>' />
-                            <br />
-                            correo:
-                            <asp:Label ID="correoLabel" runat="server" Text='<%# Eval("correo") %>' />
-                            <br />
-                            direccion:
-                            <asp:Label ID="direccionLabel" runat="server" Text='<%# Eval("direccion") %>' />
-                            <br />
-<br />
-                        </ItemTemplate>
-                    </asp:DataList>
-          
-
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bdPymesConnectionString %>" SelectCommand="SELECT * FROM [proveedor]"></asp:SqlDataSource>
-          
-
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div class="row">
+            <div class="col-sm-11 col-md-14 offset-md-13">
+               <div class="card">
+                  <div class="card-header">
+                    Mantenedor Productos
+                  </div>
+                  <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <button id="btnNuevoProducto" type="button" class="btn btn-sm btn-success">Nuevo</button>
+                            </div>
+                        </div>
+                      <hr />
+                        <div class="row mt-3">
+                            <div class="col-sm-12">
+                                <table id="tbProducto" class="table table-striped table-bordered nowrap compact" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Codigo</th>
+                                            <th>Nombre</th>
+                                            <th>Descripcion</th>
+                                            <th>Categoria</th>
+                                            <th>Estado</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="card-footer">
+                  </div>
                 </div>
             </div>
-            
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalrol" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <input id="txtIdProducto" class="model" name="IdProducto" value="0" type="hidden" />
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Codigo</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control form-control-sm model" id="txtCodigo" name="Codigo">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control form-control-sm model" id="txtNombre" name="Nombre">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Descripcion</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control form-control-sm model" id="txtDescripcion" name="Descripcion">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Categoria</label>
+                <div class="col-sm-10">
+                    <select class="form-control form-control-sm model" id="cboCategoria" name="Categoria">
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Activo</label>
+                <div class="col-sm-10">
+                    <select class="form-control form-control-sm model" id="cboEstado" name="Activo">
+                        <option value="1">Activo</option>
+                        <option value="0">No Activo</option>
+                    </select>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-primary">Guardar Cambios</button>
+          </div>
         </div>
-    </form>
+      </div>
+    </div>
+    <script src="Controlador/frmProducto/frmProducto.js"></script>
 </asp:Content>
 

@@ -97,7 +97,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="frmUsuarios.aspx">
+                    <a class="nav-link text-white" href="frmReportes.aspx">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">report</i>
                         </div>
