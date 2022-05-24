@@ -20,7 +20,30 @@ namespace appPlantilla.Presentacion.pages
 
         
 
+            {
+                Response.Redirect("frmProveedores.aspx");
+            
 
+            }
+            else
+            {
+                lblMensaje.Text = "usuario no Registrado ";
+            }
+
+
+
+        }
+
+        protected void btnContinuar_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("~/frmLogin.aspx");
+        }
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     
