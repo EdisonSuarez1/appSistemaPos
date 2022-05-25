@@ -3921,6 +3921,7 @@
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clProveedoresD.cs" />
     <Compile Include="Datos\clUsuariosD.cs" />
+    <Compile Include="Datos\clVenaa.cs" />
     <Compile Include="Datos\clVentaD.cs" />
     <Compile Include="Entidades\clClienteE.cs" />
     <Compile Include="Entidades\clProveedoresE.cs" />

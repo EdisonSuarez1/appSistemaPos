@@ -15,7 +15,7 @@ namespace appPlantilla.Datos
 
 
         // Conexion a la base de datos
-        public clConexion()
+        public clConexion()                                                                 
         {
             conexion = new SqlConnection("Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
 
