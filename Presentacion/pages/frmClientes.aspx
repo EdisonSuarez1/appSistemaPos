@@ -3,29 +3,82 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
+    
 
 
-    <div class="rom m-4">
-        <div class="col-sm-11 col-md-14 offset-md-13">
-            <div class="card">
-                <div class="card-header">
-                    <h1>
-                        <center>POS PYMES</center>
-                   </h1>
+
+    <formview runat="server" >
+ 
+
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <h1 class="h3 mb-2 text-gray-800">LISTADO CLIENTES</h1>
+
+
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Listado</h6>
                 </div>
                 <div class="card-body">
-                    <table class="display responsive nowrap" id="mytable" style="width: 100%">
-                        <thead>
-                            <tr>
-                                <th>idCliente</th>
-                                <th>Tipo Documento</th>
-                                <th>Numero Documento</th>
-                                <th>Nombre</th>
-                                <th>Direccion</th>
-                                <th>Telefono</th>
-                                <th>Fecha Registro</th>
-                                <th>Acciones</th>
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dtCliente" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>Documento</th>
+                                    <th>#Documento</th>
+                                    <th>Nombre</th>
+                                    <th>direcccion</th>
+                                    <th>telefono</th>
+                                    <th>fecha registro</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>id</th>
+                                    <th>Documento</th>
+                                    <th>#Documento</th>
+                                    <th>Nombre</th>
+                                    <th>direcccion</th>
+                                    <th>telefono</th>
+                                    <th>fecha registro</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     
+</formview>
+
+
+
+    
+
+    <script src="../recursos/vendor/jquery/jquery.min.js"></script>
+
+    <script src="../recursos/js/datosDataTable.js"></script>
+
+
+
+
+
+
+
+
 
                             </tr>
                         </thead>
