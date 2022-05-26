@@ -1,7 +1,10 @@
-﻿using System;
+﻿using appPlantilla.Entidades;
+using appPlantilla.Logica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,6 +15,20 @@ namespace appPlantilla.Presentacion.pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
+
+        [WebMethod]
+        public static List<clClienteE> mtdListarCliente()
+        {
+            clClienteL objClienteL = new clClienteL();
+            List<clClienteE> listaCliente = new List<clClienteE>();
+            listaCliente = objClienteL.mtdListarCliente();
+            return listaCliente;
+
+        }
+
+
+
     }
 }

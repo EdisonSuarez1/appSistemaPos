@@ -23,10 +23,32 @@
     <!-- CSS Files -->
     <link id="pagestyle" href="../../assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
 
+
+
+
+
+
+
+    <link href="../recursos/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link href="../recursos/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    
+
+
+
+
+
+
+
+
+
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
 </head>
+
+
 
 <body class="g-sidenav-show  bg-gray-200">
     <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-2   bg-gradient-dark" id="sidenav-main">
@@ -254,8 +276,29 @@
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../../assets/js/material-dashboard.min.js?v=3.0.2"></script>
 
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
     </asp:ContentPlaceHolder>
+
+
+
+    <script src="../recursos/vendor/datatables/jquery.dataTables.min.js"></script>
+
+    <script src="../recursos/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    
+    <script src="../recursos/js/demo/datatables-demo.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
 
 </body>
 
