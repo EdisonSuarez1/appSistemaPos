@@ -18,20 +18,20 @@ namespace appPlantilla.Presentacion.pages
         {
 
         }
-        private List<clProductosE> btnBuscarProducto_Click (object sender, EventArgs e)
-        {
-            clProductosL objDatosL = new clProductosL();
-            List<clProductosE> listaProductos = new List<clProductosE>();
+        //private List<clProductosE> btnBuscarProducto_Click (object sender, EventArgs e)
+        //{
+        //    clProductosL objDatosL = new clProductosL();
+        //    List<clProductosE> listaProductos = new List<clProductosE>();
 
-            listaProductos = objDatosL.mtdBuscarProductos();
-            return listaProductos;
+        //    listaProductos = objDatosL.mtdBuscarProductos();
+        //    return listaProductos;
              
 
 
 
 
 
-        }
+        //}
 
 
 
