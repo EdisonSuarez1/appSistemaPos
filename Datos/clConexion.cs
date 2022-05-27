@@ -21,8 +21,8 @@ namespace appPlantilla.Datos
 
             conexion.Open();
 
-        }
-
+        }  
+         
         //Metodo para los Select
         public DataTable mtdDesconectado(string sql)
         {

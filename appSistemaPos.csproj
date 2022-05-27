@@ -7748,6 +7748,7 @@
     <Compile Include="Logica\clVentaL.cs" />
     <Compile Include="Presentacion\pages\frmReportes.aspx.cs">
       <DependentUpon>frmReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Presentacion\pages\frmReportes.aspx.designer.cs">
       <DependentUpon>frmReportes.aspx</DependentUpon>

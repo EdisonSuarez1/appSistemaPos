@@ -10,6 +10,7 @@ namespace appPlantilla.Datos
     public class clClienteD
     {
 
+
         public List<clClienteE> mtdListarCliente()
         {
             string sql = "select * from cliente";
@@ -33,6 +34,12 @@ namespace appPlantilla.Datos
             }
             return listaCliente;
         }
+
+
+
+
+
+
 
 
 
