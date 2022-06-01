@@ -5,12 +5,12 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
 
 
 
-    <formview runat="server" >
- 
+
+    <formview runat="server">
+
 
 
         <div class="container-fluid">
@@ -61,32 +61,10 @@
             </div>
 
         </div>
-     
-</formview>
+
+    </formview>
 
 
-
-    
-
-    <script src="../recursos/vendor/jquery/jquery.min.js"></script>
-
-    <script src="../recursos/js/datosDataTable.js"></script>
-
-
-
-
-
-
-
-
-
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -124,4 +102,8 @@
             </div>
         </div>
     </div>
+    <%--    ---------SCRIPT DATATABLE--------------%>
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/js/datosDataTable.js"></script>
+    <%--    ---------SCRIPT DATATABLE--------------%>
 </asp:Content>
