@@ -80,48 +80,4 @@
 
 
 
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Articulo</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <input type="text" id="txtidArticulo" />
-                            <div class="form-group">
-                                <label for="txtNombre">Nombre:</label>
-                                <input type="text" class="form-control" id="txtNombre">
-                            </div>
-                            <div class="form-group">
-                                <label for="txtCantidad">Cantidad:</label>
-                                <input type="text" class="form-control" id="txtCantidad">
-                            </div>
-                            <div class="form-group">
-                                <label for="txtPrecio">Precio:</label>
-                                <input type="text" class="form-control" id="txtPrecio">
-                            </div>
-                            <div class="form-group">
-                                <label for="txtDescripcion">Descripcion:</label>
-                                <input type="text" class="form-control" id="txtDescripcion">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </asp:Content>

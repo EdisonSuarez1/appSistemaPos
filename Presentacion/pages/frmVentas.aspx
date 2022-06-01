@@ -15,7 +15,7 @@
                               <i class="fa fa-print" aria-hidden="true"></i>Imprimir y Terminar Venta
                           </button>
                       </div>
-                </div>
+                <%--</div>--%>
                 <div class="card-body p-2 card-venta">
                     <div class="row">
                         <div class="col-sm-3">
