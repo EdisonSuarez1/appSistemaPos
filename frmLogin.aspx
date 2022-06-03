@@ -5,6 +5,10 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript">
+    window.history.forward();
+    function sinVueltaAtras(){ window.history.forward(); }
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/login.png">
@@ -24,7 +28,7 @@
     <link id="pagestyle" href="assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-200">
+<body onload="sinVueltaAtras();" onpageshow="if (event.persisted) sinVueltaAtras();" onunload=""  class="bg-gray-200">
     <form id="form1" runat="server">
         <div class="container position-sticky z-index-sticky top-0">
             <div class="row">

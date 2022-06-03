@@ -8,7 +8,7 @@ using System.Web;
 namespace appPlantilla.Datos
 {
     public class clConexion
-    {
+    {                     
 
 
         SqlConnection conexion;
