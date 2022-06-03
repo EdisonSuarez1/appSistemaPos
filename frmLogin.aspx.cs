@@ -13,6 +13,7 @@ namespace appPlantilla
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session.Remove("ingresar");
 
         }
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -26,6 +27,8 @@ namespace appPlantilla
             clUsuariosL objUsuariosL = new clUsuariosL();
             clUsuariosE objDatosReci = new clUsuariosE();
             objDatosReci = objUsuariosL.mtdLogin(objDatos);
+
+            Session["ingresar"] = txtCorreo.Text;
             if (objDatosReci != null)
             {
 

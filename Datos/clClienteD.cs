@@ -7,7 +7,7 @@ using System.Web;
 
 namespace appPlantilla.Datos
 {
-    public class clClienteD
+    public class clClienteD          
     {
 
         public List<clClienteE> mtdListarCliente()

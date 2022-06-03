@@ -11,6 +11,11 @@ namespace appPlantilla.Presentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                if (Session["ingresar"] == null)
+                    Response.Redirect("../../frmLogin.aspx");
+            }
 
         }
     }
