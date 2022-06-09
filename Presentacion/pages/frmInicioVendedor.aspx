@@ -86,8 +86,46 @@
                     </a>
                 </div>
             </div>
+             <footer class="footer py-4  ">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+                    <div class="copyright text-center text-sm text-muted text-lg-start">
+                        ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>
+                        ,
+                hecho por <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <a>JEY SOFTWARE 
+                        </a>
 
-            <footer class="footer py-4  ">
+                        para una mejor administración
+                                <i class="fa fa-store" aria-hidden="true"></i>
+
+                    </div>
+                </div>
+             <div class="col-lg-6">
+                    <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                         <li class="nav-item">
+                                    <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<%--            <footer class="footer py-4  ">
                 <div class="container-fluid">
                     <div class="row align-items-center justify-content-lg-between">
                         <div class="col-lg-6 mb-lg-0 mb-4">
@@ -119,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer>--%>
         </div>
     </main>
 
