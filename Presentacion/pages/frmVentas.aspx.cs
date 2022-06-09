@@ -14,7 +14,10 @@ namespace appPlantilla.Presentacion.pages
 {
     public partial class frmVentas : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
+        clConexion con = new clConexion();
+        
+        List<arreglos.GridV> GvArray = new List<arreglos.GridV>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -40,7 +43,6 @@ namespace appPlantilla.Presentacion.pages
                 txtClienteNombre.Text = leer["nombre"].ToString();
                 txtClienteDireccion.Text = leer["direccion"].ToString();
                 txtClienteTelefono.Text = leer["telefono"].ToString();
-
             }
             else
             {
@@ -50,14 +52,13 @@ namespace appPlantilla.Presentacion.pages
                 txtClienteDireccion.Text = "";
                 txtClienteTelefono.Text = "";
                 txtClienteTelefono.Text = string.Empty; ;
-
             }
             con.Close();
         }
 
         protected void btnBuscarProducto_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM producto INNER JOIN productoTienda ON producto.idProducto=productoTienda.idProducto WHERE producto.codigo=1;";
+            string sql = "SELECT * FROM producto INNER JOIN productoTienda ON producto.idProducto=productoTienda.idProducto WHERE producto.codigo='"+txtProductoCodigo.Text+"';";
             //clConexion objConexion = new clConexion();
 
             SqlCommand comando = new SqlCommand(sql, con);
@@ -83,5 +84,53 @@ namespace appPlantilla.Presentacion.pages
             }
             con.Close();
         }
+
+        protected void InsertarDat()
+        {
+            int k;
+            //INSERTAR DATOS EN LA PAGINA EN EL GRID VIEW
+            ViewState["Vaar"] = GvArray;//Vaciar el GvArray al ViewState
+            gdvDatos.DataSource = GvArray;//Vaciar el GridView para visualizar por el usuario
+            gdvDatos.DataBind();
+            for (k = 0; k < GvArray.Count; k++)
+            {
+                gdvDatos.SelectedIndex = k;
+                gdvDatos.SelectedRow.Cells[0].Text = GvArray[k].id;
+                gdvDatos.SelectedRow.Cells[1].Text = GvArray[k].Dat1;
+                gdvDatos.SelectedRow.Cells[2].Text = GvArray[k].Dat2;
+                gdvDatos.SelectedRow.Cells[3].Text = GvArray[k].Dat3;
+                gdvDatos.SelectedRow.Cells[4].Text = GvArray[k].Dat4;
+
+            }
+            //Response.Write("Se Encontro el Registro" + GvArray.Count.ToString());
+        }
+        int n1, n2, r;
+        protected void addProducto(object sender, EventArgs e)
+        {
+
+            n1 = Convert.ToInt32(txtProductoPrecio.Text);
+            n2 = Convert.ToInt32(txtProductoCantidad.Text);
+            r = n1 * n2;
+
+
+            if (ViewState["Vaar"] != null)
+            {//Recuperar registros guardados
+                GvArray = ViewState["Vaar"] as List<arreglos.GridV>;
+            }
+            GvArray.Add(new arreglos.GridV
+            {
+                id = txtProductoCodigo.Text,
+                Dat1 = txtProductoNombre.Text,
+                Dat2 = txtProductoDescripcion.Text,
+                Dat3 = txtProductoCantidad.Text,
+                Dat4 = txtProductoPrecio.Text,
+                Dat5 = "r.ToString()"
+            });
+            InsertarDat();
+        }
+        protected void gdvDatos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}   
+}

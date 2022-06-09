@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" class="g-sidenav-show  bg-gray-200">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" class="g-sidenav-show bg-gray-200">
     <form runat="server">
         <div class="row">
             <div class="col-sm-11 col-md-14 offset-md-13">
@@ -199,13 +199,13 @@
                                             <div class="col-sm-3">
                                                 <div class="form-group mb-0">
                                                     <label for="txtproductonombre" class="col-form-label col-form-label-sm">Nombre:</label>
-                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoNombre" name="RazonSocial" autocomplete="off"></asp:TextBox>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoNombre" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-0">
                                                     <label for="txtproductodescripcion" class="col-form-label col-form-label-sm">Descripcion:</label>
-                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoDescripcion" name="RazonSocial" autocomplete="off"></asp:TextBox>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoDescripcion" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
 
                                                 </div>
                                             </div>
@@ -219,28 +219,28 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group mb-0">
                                                         <label for="txtproductostock" class="col-form-label col-form-label-sm">En Stock:</label>
-                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoStock" name="RazonSocial" autocomplete="off"></asp:TextBox>
+                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoStock" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <div class="form-group mb-0">
                                                         <label for="txtproductoprecio" class="col-form-label col-form-label-sm">Precio:</label>
-                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoPrecio" name="RazonSocial" autocomplete="off"></asp:TextBox>
+                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoPrecio" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <div class="form-group mb-0">
                                                         <label for="txtproductocantidad" class="col-form-label col-form-label-sm">Cantidad: <span class="required">*</span></label>
-                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoCantidad" name="RazonSocial" autocomplete="off"></asp:TextBox>
+                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoCantidad" name="RazonSocial" autocomplete="off" ></asp:TextBox>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <div class="form-group mb-0">
                                                         <label for="btnAsignar" class="col-form-label col-form-label-sm invisible">Buscar:</label>
-                                                        <button id="btnAgregar" type="button" class="btn btn-sm btn-success btn-block"><i class="fa fa-plus-circle" aria-hidden="true"></i>Agregar</button>
+                                                        <asp:Button ID="btnAgregar" runat="server" type="button" class="btn btn-sm btn-success btn-block" OnClick="addProducto" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,21 +248,21 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <hr />
+
                             <div class="row mt-3">
-                                <div class="col-sm-12">
+                                <div class="col-sm-13">
                                     <div class="table-responsive-sm">
                                         <table id="tbVenta" class="table table-striped table-bordered nowrap table-sm" style="width: 100%">
                                             <thead>
                                                 <tr>
                                                     <th></th>
-                                                    <th>Cantidad</th>
                                                     <th>Producto</th>
                                                     <th>Descripcion</th>
+                                                    <th>Cantidad</th>
                                                     <th>Precio Unidad</th>
                                                     <th>Importe Total</th>
+                                                    <th>Acciones</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -272,6 +272,46 @@
 
                                 </div>
                             </div>
+
+
+                            <asp:GridView ID="gdvDatos" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="gdvDatos_SelectedIndexChanged" BorderStyle="None">
+                                <Columns>
+                                    <asp:TemplateField HeaderText="">
+                                        <HeaderStyle Font-Size="10pt" Width="110px" /> <ItemStyle Font-Size="10pt" />
+                                        
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="">
+                                        <HeaderStyle Font-Size="10pt" Width="250px" />
+                                        <ItemStyle Font-Size="10pt" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="">
+                                        <HeaderStyle Font-Size="10pt" Width="250px" />
+                                        <ItemStyle Font-Size="10pt" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="">
+                                        <HeaderStyle Font-Size="10pt" Width="250px" />
+                                        <ItemStyle Font-Size="10pt" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="">
+                                        <HeaderStyle Font-Size="10pt" Width="250px" />
+                                        <ItemStyle Font-Size="10pt" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="">
+                                        <HeaderStyle Font-Size="10pt" Width="300px" />
+                                        <ItemStyle Font-Size="10pt" />
+                                    </asp:TemplateField>
+
+                                    <asp:TemplateField></asp:TemplateField>
+
+
+
+                                    <asp:ButtonField Text="Borrar" />
+                                </Columns>
+                            </asp:GridView>
+
+                            <hr />
+                            <hr />
+                            <hr />
 
                             <hr />
                             <div class="row">
@@ -366,7 +406,12 @@
                 </div>
             </div>
         </div>
+
+
+
+
     </form>
     <script src="Controlador/frmCrearVenta/frmCrearVenta.js"></script>
+
 
 </asp:Content>
