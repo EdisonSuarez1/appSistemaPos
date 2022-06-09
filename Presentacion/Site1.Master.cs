@@ -16,7 +16,7 @@ namespace appPlantilla.Presentacion
         {
 
 
-            lblMensaje.Text = Session["rol"].ToString();
+            lblMensajes.Text = Session["rol"].ToString();
             lblNombre.Text = Session ["Usuario"].ToString();
 
 

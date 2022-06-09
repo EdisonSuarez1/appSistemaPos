@@ -348,54 +348,41 @@
 
 
 
-                            <div class="container-fluid py-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="card my-4">
-                                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                                                    <h6 class="text-white text-capitalize ps-3">Authors table</h6>
-                                                </div>
-                                            </div>
-                                            <asp:GridView ID="gdvDatos" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="gdvDatos_SelectedIndexChanged" BorderStyle="None"
-                                                CssClass="table table-bordered table-condensed table-responsive table-hover">
-                                                <Columns>
-                                                    <th>
-                                                        <asp:TemplateField HeaderText="CODIGO">
-                                                            <headerstyle font-size="20pt" width="110px" horizontalalign="Center" verticalalign="Middle" />
-                                                            <itemstyle font-size="20pt" horizontalalign="Center" verticalalign="Middle" />
-                                                        </asp:TemplateField>
-                                                    </th>
-                                                    <asp:TemplateField HeaderText="PRODUCTO">
-                                                        <HeaderStyle Font-Size="10pt" Width="215px" />
-                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                    </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="DESCRIPCION">
-                                                        <HeaderStyle Font-Size="10pt" Width="253px" />
-                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                    </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="PRECIO UNIDAD">
-                                                        <HeaderStyle Font-Size="10pt" Width="281px" />
-                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                    </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="CANTIDAD">
-                                                        <HeaderStyle Font-Size="10pt" Width="214px" />
-                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                    </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="IMPORTE TOTAL">
-                                                        <HeaderStyle Font-Size="10pt" Width="265px" />
-                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                    </asp:TemplateField>
-                                                    <asp:TemplateField HeaderText="BORRAR">
-                                                        <HeaderStyle Font-Size="10pt" Width="265px" />
-                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
-                                                    </asp:TemplateField>
-                                                </Columns>
-                                            </asp:GridView>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <asp:GridView ID="gdvDatos" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="gdvDatos_SelectedIndexChanged" BorderStyle="None"
+                                CssClass="table table-bordered table-condensed table-responsive table-hover">
+                                <Columns>
+
+                                    <asp:TemplateField HeaderText="CODIGO">
+                                        <HeaderStyle Font-Size="20pt" Width="110px" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="PRODUCTO">
+                                        <HeaderStyle Font-Size="10pt" Width="215px" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="DESCRIPCION">
+                                        <HeaderStyle Font-Size="10pt" Width="253px" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="PRECIO UNIDAD">
+                                        <HeaderStyle Font-Size="10pt" Width="281px" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="CANTIDAD">
+                                        <HeaderStyle Font-Size="10pt" Width="214px" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="IMPORTE TOTAL">
+                                        <HeaderStyle Font-Size="10pt" Width="265px" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="BORRAR">
+                                        <HeaderStyle Font-Size="10pt" Width="265px" />
+                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                    </asp:TemplateField>
+                                </Columns>
+                            </asp:GridView>
+
                             <br />
                             <br />
                             <div class="row">
@@ -452,43 +439,43 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
-                        </div>
-                    </div>
+        <div class="card-footer">
+        </div>
+        </div>
                 </div>
             </div>
 
             <!-- MODAL PRODUCTOS -->
-            <div class="modal fade" id="modalProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Productos</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+        <div class="modal fade" id="modalProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Productos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table id="tbProducto" class="table table-striped table-bordered nowrap compact">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Codigo</th>
+                                        <th>Nombre</th>
+                                        <th>Descripcion</th>
+                                        <th>Stock</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="modal-body">
-                            <div class="table-responsive">
-                                <table id="tbProducto" class="table table-striped table-bordered nowrap compact">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Codigo</th>
-                                            <th>Nombre</th>
-                                            <th>Descripcion</th>
-                                            <th>Stock</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
-                            </div>
 
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </form>
     <script src="Controlador/frmCrearVenta/frmCrearVenta.js"></script>
