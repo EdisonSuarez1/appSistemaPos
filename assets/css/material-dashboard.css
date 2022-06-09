@@ -4429,7 +4429,7 @@ fieldset:disabled .btn {
 }
 
 .collapse:not(.show) {
-    display: none;
+    display: flex;
 }
 
 .collapsing {
@@ -5065,6 +5065,11 @@ fieldset:disabled .btn {
     margin-bottom: 0;
     list-style: none;
 }
+    .navbar-nav > li:hover {
+        background-image: linear-gradient(195deg, #407dec 10%, #D81B60 100%);
+        transition: background-color .5s;
+    }
+
 
     .navbar-nav .nav-link {
         padding-right: 0;
@@ -23093,7 +23098,7 @@ hr.horizontal {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: 300;
-    color: #fff;
+    color: black;
 }
 
     .navbar-vertical .navbar-nav .nav-link > i {
@@ -23114,6 +23119,7 @@ hr.horizontal {
     .navbar-vertical .navbar-nav .nav-link .avatar {
         width: 1.875rem;
         height: 1.875rem;
+
     }
 
 .navbar-vertical .navbar-nav .nav-sm .nav-link {
@@ -23167,9 +23173,12 @@ hr.horizontal {
     }
 }
 
+
 .navbar-vertical.navbar-expand-xs.fixed-start {
     left: 0;
 }
+
+
 
 .navbar-vertical.navbar-expand-xs.fixed-end {
     right: 0;
@@ -27339,4 +27348,89 @@ pre[class*="language-"] {
     }
 }
 
+
+
+/*SUBMENU*/
+
+
+nav2 {
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-nav > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.navbar-nav > li:hover {
+    background-color: red;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: circle;
+    width: 200px;
+    background-color: rgba(0,0,0, .5);
+}
+
+
+.navbar-nav li:hover .menu-vertical {
+    display: table-row;
+
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+.menu-vertical li a {
+    display: inline-grid;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: double;
+}
+
+
 /*# sourceMappingURL=dashboard-free.css.map */
+
+
+
+
+
+.collapse1 {
+
+
+
+    display:not(.show); 
+
+{
+   display: none;    
+}
+
+}
+
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+}
