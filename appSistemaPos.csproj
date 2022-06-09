@@ -3893,6 +3893,7 @@
     <Content Include="Global.asax" />
     <Content Include="Imagenes\road-4878453.jpg" />
     <Content Include="Imagenes\road-4878453_1920.jpg" />
+    <Content Include="Presentacion\pages\frmreporteCliente.aspx" />
     <Content Include="Presentacion\pages\frmReportes.aspx" />
     <Content Include="Presentacion\pages\billing.html" />
     <Content Include="Presentacion\pages\dashboard.html" />
@@ -3905,6 +3906,7 @@
     <Content Include="Presentacion\pages\frmInventario.aspx" />
     <Content Include="Presentacion\pages\frmPageBlank.aspx" />
     <Content Include="Presentacion\pages\frmProveedores.aspx" />
+    <Content Include="Presentacion\pages\frmReporteVentas.aspx" />
     <Content Include="Presentacion\pages\frmTable.aspx" />
     <Content Include="Presentacion\pages\frmUsuarios.aspx" />
     <Content Include="Presentacion\pages\frmVentas.aspx" />
@@ -3944,6 +3946,13 @@
     <Compile Include="Logica\clProveedoresL.cs" />
     <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Logica\clVentaL.cs" />
+    <Compile Include="Presentacion\pages\frmreporteCliente.aspx.cs">
+      <DependentUpon>frmreporteCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmreporteCliente.aspx.designer.cs">
+      <DependentUpon>frmreporteCliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\pages\frmReportes.aspx.cs">
       <DependentUpon>frmReportes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4013,6 +4022,13 @@
     </Compile>
     <Compile Include="Presentacion\pages\frmProveedores.aspx.designer.cs">
       <DependentUpon>frmProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmReporteVentas.aspx.cs">
+      <DependentUpon>frmReporteVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmReporteVentas.aspx.designer.cs">
+      <DependentUpon>frmReporteVentas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\pages\frmTable.aspx.cs">
       <DependentUpon>frmTable.aspx</DependentUpon>
