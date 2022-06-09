@@ -22,7 +22,7 @@ namespace appPlantilla.Presentacion.pages
             {
                 if (Session["ingresar"] == null)
                     Response.Redirect("../../frmLogin.aspx");
-            }
+            }                 
         }
 
 
