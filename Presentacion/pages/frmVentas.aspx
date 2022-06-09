@@ -1,8 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Presentacion/Site1.Master" AutoEventWireup="true" CodeBehind="frmVentas.aspx.cs" Inherits="appPlantilla.Presentacion.pages.frmVentas" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 200px;
+        }
+
+        .auto-style2 {
+            width: 108px;
+        }
+
+        .auto-style3 {
+            width: 185px;
+        }
+
+        .auto-style6 {
+            width: 204px;
+        }
+
+        .auto-style7 {
+            width: 145px;
+        }
+
+        .auto-style8 {
+            width: 184px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" class="g-sidenav-show bg-gray-200">
+
+
     <form runat="server">
         <div class="row">
             <div class="col-sm-11 col-md-14 offset-md-13">
@@ -15,6 +42,53 @@
                               <i class="fa fa-print" aria-hidden="true"></i>Imprimir y Terminar Venta
                           </button>
                       </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalrol">
+                                    Open modal
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="modalrol" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <h4>Modal JEEm</h4>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-primary">Guardar Cambios</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
                     </div>
                     <div class="card-body p-2 card-venta">
                         <div class="row">
@@ -178,9 +252,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
-
                                     </div>
                                 </div>
                             </div>
@@ -233,14 +304,14 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group mb-0">
                                                         <label for="txtproductocantidad" class="col-form-label col-form-label-sm">Cantidad: <span class="required">*</span></label>
-                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoCantidad" name="RazonSocial" autocomplete="off" ></asp:TextBox>
+                                                        <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtProductoCantidad" name="RazonSocial" autocomplete="off"></asp:TextBox>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <div class="form-group mb-0">
                                                         <label for="btnAsignar" class="col-form-label col-form-label-sm invisible">Buscar:</label>
-                                                        <asp:Button ID="btnAgregar" runat="server" type="button" class="btn btn-sm btn-success btn-block" OnClick="addProducto" />
+                                                        <asp:Button ID="btnAgregar" runat="server" type="button" class="btn btn-sm btn-success btn-block" OnClick="addProducto" Text="Agregar" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -250,19 +321,19 @@
                             </div>
                             <hr />
 
-                            <div class="row mt-3">
+                            <%--<div class="row mt-3">
                                 <div class="col-sm-13">
                                     <div class="table-responsive-sm">
                                         <table id="tbVenta" class="table table-striped table-bordered nowrap table-sm" style="width: 100%">
                                             <thead>
                                                 <tr>
-                                                    <th></th>
-                                                    <th>Producto</th>
-                                                    <th>Descripcion</th>
-                                                    <th>Cantidad</th>
-                                                    <th>Precio Unidad</th>
-                                                    <th>Importe Total</th>
-                                                    <th>Acciones</th>
+                                                    <th class="auto-style2">Codigo</th>
+                                                    <th class="auto-style3">Producto</th>
+                                                    <th class="auto-style6">Descripcion</th>
+                                                    <th class="auto-style7">Precio Unidad</th>
+                                                    <th class="auto-style8">Cantidad</th>
+                                                    <th class="auto-style1">Importe Total</th>
+                                                    <th class="auto-style1">Acciones</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -271,49 +342,62 @@
                                     </div>
 
                                 </div>
+                            </div>--%>
+
+
+
+
+
+                            <div class="container-fluid py-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card my-4">
+                                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                                                    <h6 class="text-white text-capitalize ps-3">Authors table</h6>
+                                                </div>
+                                            </div>
+                                            <asp:GridView ID="gdvDatos" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="gdvDatos_SelectedIndexChanged" BorderStyle="None"
+                                                CssClass="table table-bordered table-condensed table-responsive table-hover">
+                                                <Columns>
+                                                    <th>
+                                                        <asp:TemplateField HeaderText="CODIGO">
+                                                            <headerstyle font-size="20pt" width="110px" horizontalalign="Center" verticalalign="Middle" />
+                                                            <itemstyle font-size="20pt" horizontalalign="Center" verticalalign="Middle" />
+                                                        </asp:TemplateField>
+                                                    </th>
+                                                    <asp:TemplateField HeaderText="PRODUCTO">
+                                                        <HeaderStyle Font-Size="10pt" Width="215px" />
+                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="DESCRIPCION">
+                                                        <HeaderStyle Font-Size="10pt" Width="253px" />
+                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="PRECIO UNIDAD">
+                                                        <HeaderStyle Font-Size="10pt" Width="281px" />
+                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="CANTIDAD">
+                                                        <HeaderStyle Font-Size="10pt" Width="214px" />
+                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="IMPORTE TOTAL">
+                                                        <HeaderStyle Font-Size="10pt" Width="265px" />
+                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                                    </asp:TemplateField>
+                                                    <asp:TemplateField HeaderText="BORRAR">
+                                                        <HeaderStyle Font-Size="10pt" Width="265px" />
+                                                        <ItemStyle Font-Size="20pt" HorizontalAlign="Center" VerticalAlign="Middle" />
+                                                    </asp:TemplateField>
+                                                </Columns>
+                                            </asp:GridView>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-
-                            <asp:GridView ID="gdvDatos" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="gdvDatos_SelectedIndexChanged" BorderStyle="None">
-                                <Columns>
-                                    <asp:TemplateField HeaderText="">
-                                        <HeaderStyle Font-Size="10pt" Width="110px" /> <ItemStyle Font-Size="10pt" />
-                                        
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="">
-                                        <HeaderStyle Font-Size="10pt" Width="250px" />
-                                        <ItemStyle Font-Size="10pt" />
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="">
-                                        <HeaderStyle Font-Size="10pt" Width="250px" />
-                                        <ItemStyle Font-Size="10pt" />
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="">
-                                        <HeaderStyle Font-Size="10pt" Width="250px" />
-                                        <ItemStyle Font-Size="10pt" />
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="">
-                                        <HeaderStyle Font-Size="10pt" Width="250px" />
-                                        <ItemStyle Font-Size="10pt" />
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="">
-                                        <HeaderStyle Font-Size="10pt" Width="300px" />
-                                        <ItemStyle Font-Size="10pt" />
-                                    </asp:TemplateField>
-
-                                    <asp:TemplateField></asp:TemplateField>
-
-
-
-                                    <asp:ButtonField Text="Borrar" />
-                                </Columns>
-                            </asp:GridView>
-
-                            <hr />
-                            <hr />
-                            <hr />
-
-                            <hr />
+                            <br />
+                            <br />
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="row">
@@ -322,7 +406,7 @@
                                                 <div class="input-group-prepend">
                                                     <label class="input-group-text" for="inputGroupSelect01">Sub Total S/.</label>
                                                 </div>
-                                                <input id="txtsubtotal" readonly type="text" class="form-control" value="0">
+                                                <input id="txtSubTotal" readonly type="text" class="form-control" value="0">
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -406,10 +490,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </form>
     <script src="Controlador/frmCrearVenta/frmCrearVenta.js"></script>
 

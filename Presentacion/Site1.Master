@@ -29,6 +29,7 @@
     <!-- CSS Files -->
     <link id="pagestyle" href="../../assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
 
+
 <%--    ---------SCRIPT DATATABLE--------------%>
     <link href="../../assets/css/sb-admin-2.min.css" rel="stylesheet" />
     <link href="../../assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
@@ -125,7 +126,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="frmTable.aspx">
+                    <a class="nav-link text-white " href="tables.html">pages/tables.html">
                         <div class="text-white text-left me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons  opacity-10">note</i>
                         </div>

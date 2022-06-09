@@ -1,22 +1,14 @@
-﻿using System;
+﻿using appPlantilla.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
-using appPlantilla.Datos;
-using appPlantilla.Logica;
-using appPlantilla.Entidades;
 
 namespace appPlantilla.Presentacion.pages
 {
     public partial class frmVentas : System.Web.UI.Page
     {
-        //SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
-        clConexion con = new clConexion();
-        
+        SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
+
         List<arreglos.GridV> GvArray = new List<arreglos.GridV>();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -28,11 +20,9 @@ namespace appPlantilla.Presentacion.pages
             }
         }
 
-
         protected void btnBuscarCliente_Click(object sender, EventArgs e)
         {
             string sql = "SELECT * FROM cliente WHERE  numeroDocumento= '" + txtClienteNumDoc.Text + "' ";
-            //clConexion objConexion = new clConexion();
 
             SqlCommand comando = new SqlCommand(sql, con);
             con.Open();
@@ -58,8 +48,7 @@ namespace appPlantilla.Presentacion.pages
 
         protected void btnBuscarProducto_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM producto INNER JOIN productoTienda ON producto.idProducto=productoTienda.idProducto WHERE producto.codigo='"+txtProductoCodigo.Text+"';";
-            //clConexion objConexion = new clConexion();
+            string sql = "SELECT * FROM producto INNER JOIN productoTienda ON producto.idProducto=productoTienda.idProducto WHERE producto.codigo='" + txtProductoCodigo.Text + "';";
 
             SqlCommand comando = new SqlCommand(sql, con);
             con.Open();
@@ -85,6 +74,7 @@ namespace appPlantilla.Presentacion.pages
             con.Close();
         }
 
+
         protected void InsertarDat()
         {
             int k;
@@ -100,6 +90,8 @@ namespace appPlantilla.Presentacion.pages
                 gdvDatos.SelectedRow.Cells[2].Text = GvArray[k].Dat2;
                 gdvDatos.SelectedRow.Cells[3].Text = GvArray[k].Dat3;
                 gdvDatos.SelectedRow.Cells[4].Text = GvArray[k].Dat4;
+                gdvDatos.SelectedRow.Cells[5].Text = GvArray[k].Dat5;
+
 
             }
             //Response.Write("Se Encontro el Registro" + GvArray.Count.ToString());
@@ -108,25 +100,47 @@ namespace appPlantilla.Presentacion.pages
         protected void addProducto(object sender, EventArgs e)
         {
 
-            n1 = Convert.ToInt32(txtProductoPrecio.Text);
-            n2 = Convert.ToInt32(txtProductoCantidad.Text);
-            r = n1 * n2;
-
-
-            if (ViewState["Vaar"] != null)
-            {//Recuperar registros guardados
-                GvArray = ViewState["Vaar"] as List<arreglos.GridV>;
-            }
-            GvArray.Add(new arreglos.GridV
+            if (txtProductoCantidad.Text == "" || txtProductoPrecio.Text == "")
             {
-                id = txtProductoCodigo.Text,
-                Dat1 = txtProductoNombre.Text,
-                Dat2 = txtProductoDescripcion.Text,
-                Dat3 = txtProductoCantidad.Text,
-                Dat4 = txtProductoPrecio.Text,
-                Dat5 = "r.ToString()"
-            });
-            InsertarDat();
+                
+                Response.Write("No digito cantidad");
+            }
+            else
+            {
+                n1 = Convert.ToInt32(txtProductoPrecio.Text);
+                n2 = Convert.ToInt32(txtProductoCantidad.Text);
+                r = n1 * n2;
+                if (ViewState["Vaar"] != null)
+                {//Recuperar registros guardados
+                    GvArray = ViewState["Vaar"] as List<arreglos.GridV>;
+                }
+                GvArray.Add(new arreglos.GridV
+                {
+                    id = txtProductoCodigo.Text,
+                    Dat1 = txtProductoNombre.Text,
+                    Dat2 = txtProductoDescripcion.Text,
+                    Dat3 = txtProductoCantidad.Text,
+                    Dat4 = txtProductoPrecio.Text,
+                    Dat5 = r.ToString()
+                });
+                InsertarDat();
+
+                txtProductoCodigo.Text = "";
+                txtProductoNombre.Text = "";
+                txtProductoDescripcion.Text = "";
+                txtProductoStock.Text = "";
+                txtProductoPrecio.Text = "";
+                txtProductoCantidad.Text = "";
+                txtProductoCantidad.Text = string.Empty; ;
+
+                int sub = r + r;
+            }
+
+
+
+
+
+
         }
         protected void gdvDatos_SelectedIndexChanged(object sender, EventArgs e)
         {

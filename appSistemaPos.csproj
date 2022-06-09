@@ -72,6 +72,7 @@
     <Content Include="assets\css\nucleo-icons.css" />
     <Content Include="assets\css\nucleo-svg.css" />
     <Content Include="assets\css\sb-admin-2.min.css" />
+    <Content Include="assets\css\sweetalert.css" />
     <Content Include="assets\fonts\nucleo-icons.svg" />
     <Content Include="assets\img\apple-icon.png" />
     <Content Include="assets\img\bg-pricing.jpg" />
@@ -174,6 +175,7 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.min.js" />
     <Content Include="assets\js\plugins\smooth-scrollbar.min.js" />
     <Content Include="assets\js\plugins\world.js" />
+    <Content Include="assets\js\sweetalert.min.js" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.js" />
