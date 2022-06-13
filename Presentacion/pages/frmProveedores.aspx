@@ -90,24 +90,31 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Activo</label>
-                            <div class="col-sm-10">
-                                <select class="form-control form-control-sm model" id="cboEstado" name="Activo">
-                                    <option value="1">Activo</option>
-                                    <option value="0">No Activo</option>
-                                </select>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-primary">Guardar Cambios</button>
-                    </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Activo</label>
+                <div class="col-sm-10">
+                    <select class="form-control form-control-sm model" id="cboEstado" name="Activo">
+                        <option value="1">Activo</option>
+                        <option value="0">No Activo</option>
+                    </select>
                 </div>
-            </div>
+              </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-primary">Guardar Cambios</button>
+          </div>
         </div>
-    </form>
+      </div>
+    </div>
+        </form>
+    <script src="Controlador/frmProducto/frmProducto.js"></script>
 </asp:Content>
 
