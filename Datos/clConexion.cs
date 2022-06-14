@@ -42,6 +42,16 @@ namespace appPlantilla.Datos
             conexion.Close();
             return filasAfectadas;
         }
+
+
+        public class Conexion
+        {
+            public static string CN = "Data Source=.;Initial Catalog=DBPRUEBA;Integrated Security=True";
+        }
+
+
+
+
     }
 
 }

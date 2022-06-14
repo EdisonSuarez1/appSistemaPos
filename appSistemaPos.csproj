@@ -3935,6 +3935,7 @@
     <Compile Include="Entidades\clProveedoresE.cs" />
     <Compile Include="Entidades\clUsuariosE.cs" />
     <Compile Include="Entidades\clVentaE.cs" />
+    <Compile Include="Entidades\Respuesta.cs" />
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
