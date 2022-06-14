@@ -1,6 +1,8 @@
 ﻿using appPlantilla.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -9,19 +11,18 @@ namespace appPlantilla.Datos
     public class clVentaD
     {
 
+    }
 
-
-        public int mtdRegistrar(clProveedoresE objDatosEmpleado)
+    public class ventas
+    {
+        clConexion cn = new clConexion();
+        public DataTable MostrarVentas()
         {
-            string sql = "insert into proveedor(nit,razonSocial,telefono,correo,direccion)" +
-                "values ('" + objDatosEmpleado.nit + "' ,'" + objDatosEmpleado.razonSocial + "','" + objDatosEmpleado.telefono + "','" + objDatosEmpleado.correo + "' ,'" + objDatosEmpleado.direccion + "')";
-            clConexion objConexion = new clConexion();
-            int resulatdo = objConexion.mtdConectado(sql);
-            return resulatdo;
+            SqlDataAdapter da = new SqlDataAdapter("SP_MOSTRARTABLACLIENTES", cn.LeerCadena());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
-
-
-
-
     }
 }
