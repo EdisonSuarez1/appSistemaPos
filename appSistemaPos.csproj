@@ -3895,6 +3895,7 @@
     <Content Include="Global.asax" />
     <Content Include="Imagenes\road-4878453.jpg" />
     <Content Include="Imagenes\road-4878453_1920.jpg" />
+    <Content Include="Presentacion\pages\frmCuotas.aspx" />
     <Content Include="Presentacion\pages\frmreporteCliente.aspx" />
     <Content Include="Presentacion\pages\frmReportes.aspx" />
     <Content Include="Presentacion\pages\billing.html" />
@@ -3948,6 +3949,13 @@
     <Compile Include="Logica\clProveedoresL.cs" />
     <Compile Include="Logica\clUsuariosL.cs" />
     <Compile Include="Logica\clVentaL.cs" />
+    <Compile Include="Presentacion\pages\frmCuotas.aspx.cs">
+      <DependentUpon>frmCuotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\pages\frmCuotas.aspx.designer.cs">
+      <DependentUpon>frmCuotas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\pages\frmreporteCliente.aspx.cs">
       <DependentUpon>frmreporteCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

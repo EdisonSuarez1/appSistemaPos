@@ -8,40 +8,40 @@ using System.Web;
 namespace appPlantilla.Datos
 {
     public class clConexion
-    {                     
+    {
 
 
-        SqlConnection conexion;
+
+        SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = bdPymes; Integrated Security = True");
 
 
-        // Conexion a la base de datos
-        public clConexion()
+        public SqlConnection LeerCadena()
         {
-            conexion = new SqlConnection("Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
-
-            conexion.Open();
-
+            if (conexion.State == ConnectionState.Open)
+            {
+                conexion.Close();
+            }
+            else
+            {
+                conexion.Open();
+            }
+            return conexion;
         }
-
-        //Metodo para los Select
-        public DataTable mtdDesconectado(string sql)
+        public DataTable mtdDesconectado(string sql) //Metodo para los Select
         {
             SqlDataAdapter adaptador = new SqlDataAdapter(sql, conexion);
             DataTable tblDatos = new DataTable();
             adaptador.Fill(tblDatos);
             conexion.Close();
             return tblDatos;
-
         }
-
-        //Metodo para los Insert, Update y Delete
-        public int mtdConectado(string sql)
+        public int mtdConectado(string sql) //Metodo para los Insert, Update y Delete
         {
             SqlCommand comando = new SqlCommand(sql, conexion);
             int filasAfectadas = comando.ExecuteNonQuery();
             conexion.Close();
             return filasAfectadas;
-
         }
     }
+
 }
