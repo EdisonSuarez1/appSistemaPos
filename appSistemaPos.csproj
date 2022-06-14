@@ -4033,13 +4033,6 @@
     <Compile Include="Presentacion\pages\frmProveedores.aspx.designer.cs">
       <DependentUpon>frmProveedores.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\pages\frmReporteVentas.aspx.cs">
-      <DependentUpon>frmReporteVentas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Presentacion\pages\frmReporteVentas.aspx.designer.cs">
-      <DependentUpon>frmReporteVentas.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\pages\frmTable.aspx.cs">
       <DependentUpon>frmTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
