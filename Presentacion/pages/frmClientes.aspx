@@ -108,7 +108,7 @@
         </div>
     </div>
  </div>
-    <script src="Controlador/frmCliente/frmCliente.js"></script>
+    <script src="../../assets/js/frmCliente.js"></script>
 </asp:Content>
 
 
