@@ -7,13 +7,12 @@ namespace appPlantilla.Entidades
 {
     public class clClienteE
     {
-        public int IdCliente { get; set; }
-        public string TipoDocumento { get; set; }
-        public string NumeroDocumento { get; set; }
-        public string Nombre { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
-        public bool Activo { get; set; }
+        public int idCliente { get; set; }
+        public string tipoDocumento { get; set; }
+        public string numeroDocumento { get; set; }
+        public string nombre { get; set; }
+        public string direccion { get; set; }
+        public string telefono { get; set; }
 
 
     }

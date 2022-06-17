@@ -46,7 +46,7 @@ namespace appPlantilla.Datos
 
         public class Conexion
         {
-            public static string CN = "Data Source=.;Initial Catalog=DBPRUEBA;Integrated Security=True";
+            public static string CN = "Data Source=.;Initial Catalog=bdpymes;Integrated Security=True";
         }
 
 
