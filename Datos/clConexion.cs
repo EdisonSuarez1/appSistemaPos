@@ -15,7 +15,7 @@ namespace appPlantilla.Datos
         SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = bdPymes; Integrated Security = True");
 
 
-        public SqlConnection LeerCadena()
+        public SqlConnection LeerCadena()   
         {
             if (conexion.State == ConnectionState.Open)
             {
@@ -42,6 +42,16 @@ namespace appPlantilla.Datos
             conexion.Close();
             return filasAfectadas;
         }
+
+
+        public class Conexion
+        {
+            public static string CN = "Data Source=.;Initial Catalog=bdpymes;Integrated Security=True";
+        }
+
+
+
+
     }
 
 }
