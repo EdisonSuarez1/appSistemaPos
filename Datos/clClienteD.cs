@@ -1,4 +1,4 @@
-﻿using appPlantilla.Entidades;
+﻿ using appPlantilla.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,7 +9,7 @@ using static appPlantilla.Datos.clConexion;
 
 namespace appPlantilla.Datos
 {
-    public class clClienteD
+    public class clClienteD          
     {
 
         public static clClienteD _instancia = null;

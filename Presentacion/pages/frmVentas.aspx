@@ -32,7 +32,7 @@
 
     <form runat="server">
         <div class="row">
-            <div class="col-sm-11 col-md-14 offset-md-13">
+            <div class="col-sm-10 col-md-14 offset-md-13">
                 <div class="card">
                     <div class="card-header p-2">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>Registra Nueva Venta

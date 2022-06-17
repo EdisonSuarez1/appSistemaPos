@@ -15,7 +15,7 @@ namespace appPlantilla.Datos
         SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = bdPymes; Integrated Security = True");
 
 
-        public SqlConnection LeerCadena()   
+        public SqlConnection LeerCadena()
         {
             if (conexion.State == ConnectionState.Open)
             {
