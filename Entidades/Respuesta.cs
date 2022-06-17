@@ -13,3 +13,4 @@ namespace appPlantilla.Entidades
         public T objeto { get; set; }
     }
 }
+
