@@ -167,6 +167,7 @@
     <Content Include="assets\js\demo\chart-bar-demo.js" />
     <Content Include="assets\js\demo\chart-pie-demo.js" />
     <Content Include="assets\js\demo\datatables-demo.js" />
+    <Content Include="assets\js\frmProveedor.js" />
     <Content Include="assets\js\material-dashboard.js" />
     <Content Include="assets\js\material-dashboard.min.js" />
     <Content Include="assets\js\plugins\bootstrap-notify.js" />
