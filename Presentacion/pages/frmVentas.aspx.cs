@@ -9,7 +9,7 @@ namespace appPlantilla.Presentacion.pages
     {
         SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=bdPymes;Integrated Security=True");
 
-        List<arreglos.GridV> GvArray = new List<arreglos.GridV>();
+        List<arreglosC.GridV> GvArray = new List<arreglosC.GridV>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -112,9 +112,9 @@ namespace appPlantilla.Presentacion.pages
                 r = n1 * n2;
                 if (ViewState["Vaar"] != null)
                 {//Recuperar registros guardados
-                    GvArray = ViewState["Vaar"] as List<arreglos.GridV>;
+                    GvArray = ViewState["Vaar"] as List<arreglosC.GridV>;
                 }
-                GvArray.Add(new arreglos.GridV
+                GvArray.Add(new arreglosC.GridV
                 {
                     id = txtProductoCodigo.Text,
                     Dat1 = txtProductoNombre.Text,
@@ -135,12 +135,6 @@ namespace appPlantilla.Presentacion.pages
 
                 int sub = r + r;
             }
-
-
-
-
-
-
         }
         protected void gdvDatos_SelectedIndexChanged(object sender, EventArgs e)
         {

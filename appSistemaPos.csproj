@@ -6825,12 +6825,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\clClienteD.cs" />
+    <Compile Include="Datos\clComprasD.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clProductosD.cs" />
     <Compile Include="Datos\clProveedoresD.cs" />
     <Compile Include="Datos\clUsuariosD.cs" />
     <Compile Include="Datos\clVentaD.cs" />
     <Compile Include="Entidades\clClienteE.cs" />
+    <Compile Include="Entidades\clCompraE.cs" />
     <Compile Include="Entidades\clProductosE.cs" />
     <Compile Include="Entidades\clProveedoresE.cs" />
     <Compile Include="Entidades\clUsuariosE.cs" />
