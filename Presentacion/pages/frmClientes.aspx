@@ -25,12 +25,12 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>TIPO DOCUMENTO</th>
-                                        <th>NUMERO DOCUMENTO</th>
-                                        <th>NOMBRE</th>
-                                        <th>DIRECCION</th>
-                                        <th>TELEFONO</th>
-                                        <th>ACCIONES</th>
+                                        <th>Tipo Documento</th>
+                                        <th>Numero Documento</th>
+                                        <th>Nombre</th>
+                                        <th>Direccion</th>
+                                        <th>Telefono</th>
+                                        <th>Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>

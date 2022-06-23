@@ -1,15 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Presentacion/Site1.Master" AutoEventWireup="true" CodeBehind="frmCategoria.aspx.cs" Inherits="appPlantilla.Presentacion.pages.frmCategoria" %>
-
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
     <div class="row">
-            <div class="col-sm-12">
+        <div class="col-sm-10 col-md-14 offset-md-13">
                <div class="card">
                   <div class="card-header">
-                    Categorias Productos
+                    Categorias De Productos
                   </div>
                   <div class="card-body">
                         <div class="row">
@@ -25,8 +24,7 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Descripcion</th>
-                                            <th>Estado</th>
-                                            <th></th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -58,22 +56,18 @@
                 <label for="txtDescripcion" class="col-form-label">Descripcion:</label>
                 <input type="text" class="form-control form-control-sm model" id="txtDescripcion" name="Descripcion">
               </div>
-              <div class="form-group">
-                <label for="cboEstado" class="col-form-label">Activo:</label>
-                <select class="form-control form-control-sm model" id="cboEstado" name="Activo">
-                    <option value="1">Activo</option>
-                    <option value="0">No Activo</option>
-                </select>
-              </div>
+              
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cancelar</button>
             <button id="btnGuardarCambios" type="button" class="btn btn-sm btn-primary">Guardar Cambios</button>
           </div>
         </div>
       </div>
     </div>
-    <script src="Controlador/frmCategoria/frmCategoria.js"></script>
-    
+    <script src="../../assets/js/frmCategoria.js"></script>
+
+
+
 </asp:Content>

@@ -1,15 +1,9 @@
-﻿
-
-using appPlantilla.Datos;
+﻿using appPlantilla.Datos;
 using appPlantilla.Entidades;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace appPlantilla.Presentacion.pages
 {
@@ -22,10 +16,10 @@ namespace appPlantilla.Presentacion.pages
 
         [WebMethod]
         [ScriptMethod(UseHttpGet = true)]
-        public static Respuesta<List<clCategoriaE>> Obtener()
+        public static Respuesta<List<clCategoriaE>> mtdListarCategoria()
         {
             List<clCategoriaE> oListaCategoria = new List<clCategoriaE>();
-            oListaCategoria = clCategoriaD.Instancia.ObtenerCategoria();
+            oListaCategoria = clCategoriaD.Instancia.mtdListar();
 
             if (oListaCategoria != null)
             {
@@ -37,30 +31,42 @@ namespace appPlantilla.Presentacion.pages
             }
         }
 
+
+
+
+
+
         [WebMethod]
-        public static Respuesta<bool> Guardar(clCategoriaE oCategoria)
+        public static Respuesta<bool> mtdRegistrarCategoria(clCategoriaE oCategoria)
         {
             bool Respuesta = false;
-            Respuesta = clCategoriaD.Instancia.RegistrarCategoria(oCategoria);
+            Respuesta = clCategoriaD.Instancia.mtdRegistrar(oCategoria);
             return new Respuesta<bool>() { estado = Respuesta };
 
         }
 
         [WebMethod]
-        public static Respuesta<bool> Editar(clCategoriaE oCategoria)
+        public static Respuesta<bool> mtdEditarCategoria(clCategoriaE oCategoria)
         {
             bool Respuesta = false;
-            Respuesta = clCategoriaD.Instancia.ModificarCategoria(oCategoria);
+            Respuesta = clCategoriaD.Instancia.mtdEditar(oCategoria);
             return new Respuesta<bool>() { estado = Respuesta };
 
         }
 
         [WebMethod]
-        public static Respuesta<bool> Eliminar(int IdCategoria)
+        public static Respuesta<bool> mtdEliminarcategoria(int idCategoria)
         {
             bool Respuesta = false;
-            Respuesta = clCategoriaD.Instancia.EliminarCategoria(IdCategoria);
+            Respuesta = clCategoriaD.Instancia.mtdEliminar(idCategoria);
             return new Respuesta<bool>() { estado = Respuesta };
         }
+
+
+
+
+
+
+
     }
 }
