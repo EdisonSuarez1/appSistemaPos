@@ -48,6 +48,7 @@ $('#tbCategoria tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]
 
     var model = $(this).data("categoria")
     $("#txtIdCategoria").val(model.idCategoria);
+    $("#txtDescripcion").val(model.Descripcion);
     $("#cboEstado").val(model.activo == true ? 1 : 0);
     $("#cboEstado").prop("disabled", false);
     $("#txtDescripcion").val(model.descripcion);

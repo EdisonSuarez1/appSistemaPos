@@ -107,10 +107,10 @@ namespace appPlantilla.Datos
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("spEditarCategoria", oConexion);
-                    cmd.Parameters.AddWithValue("idCategoria", oCategoria.idCategoria);
-                    cmd.Parameters.AddWithValue("descripcion", oCategoria.descripcion);
-                    cmd.Parameters.AddWithValue("activo", oCategoria.activo);
+                    SqlCommand cmd = new SqlCommand("usp_ModificarCategoria", oConexion);
+                    cmd.Parameters.AddWithValue("IdCategoria", oCategoria.IdCategoria);
+                    cmd.Parameters.AddWithValue("Descripcion", oCategoria.Descripcion);
+                    cmd.Parameters.AddWithValue("Activo", oCategoria.Activo);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
 
                     cmd.CommandType = CommandType.StoredProcedure;
