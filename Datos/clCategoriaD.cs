@@ -48,6 +48,7 @@ namespace appPlantilla.Datos
                         {
                             idCategoria = Convert.ToInt32(dr["idCategoria"].ToString()),
                             descripcion = dr["descripcion"].ToString(),
+                            activo = Convert.ToBoolean(dr["activo"].ToString())
 
                         });
                     }
@@ -109,6 +110,7 @@ namespace appPlantilla.Datos
                     SqlCommand cmd = new SqlCommand("spEditarCategoria", oConexion);
                     cmd.Parameters.AddWithValue("idCategoria", oCategoria.idCategoria);
                     cmd.Parameters.AddWithValue("descripcion", oCategoria.descripcion);
+                    cmd.Parameters.AddWithValue("activo", oCategoria.activo);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
 
                     cmd.CommandType = CommandType.StoredProcedure;

@@ -8,7 +8,7 @@ namespace appPlantilla.Datos
 
 
 
-        SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = bdPymes; Integrated Security = True");
+        SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = pymes; Integrated Security = True");
 
 
         public SqlConnection LeerCadena()
@@ -42,7 +42,7 @@ namespace appPlantilla.Datos
 
         public class Conexion
         {
-            public static string CN = "Data Source=.;Initial Catalog=bdpymes;Integrated Security=True";
+            public static string CN = "Data Source=.;Initial Catalog=pymes;Integrated Security=True";
         }
 
 

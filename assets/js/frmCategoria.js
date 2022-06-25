@@ -22,6 +22,7 @@ function cargarDatos() {
                     $("<tr>").append(
                         $("<td>").text(i + 1),
                         $("<td>").text(row.descripcion),
+                        $("<td>").text(row.activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
                             $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("categoria", row),
                             $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("categoria", row.idCategoria)
@@ -47,9 +48,9 @@ $('#tbCategoria tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]
 
     var model = $(this).data("categoria")
     $("#txtIdCategoria").val(model.idCategoria);
-    $("#txtDescripcion").val(model.Descripcion);
     $("#cboEstado").val(model.activo == true ? 1 : 0);
     $("#cboEstado").prop("disabled", false);
+    $("#txtDescripcion").val(model.descripcion);
 
 
     $('#modalrol').modal('show');
@@ -130,6 +131,7 @@ $('#btnGuardarCambios').on('click', function () {
             oCategoria: {
                 idCategoria: parseInt($("#txtIdCategoria").val()),
                 descripcion: $("#txtDescripcion").val(),
+                activo: ($("#cboEstado").val() == "1" ? true : false)
                 
             }
         }
