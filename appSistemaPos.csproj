@@ -6942,7 +6942,6 @@
     </Compile>
     <Compile Include="Presentacion\pages\frmProveedor.aspx.cs">
       <DependentUpon>frmProveedor.aspx</DependentUpon>
-	</Compile>
       <SubType>ASPXCodeBehind</SubType>
     <Compile Include="Presentacion\pages\frmProveedor.aspx.cs">
       <DependentUpon>frmProveedor.aspx</DependentUpon>
