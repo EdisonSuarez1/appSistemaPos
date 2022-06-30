@@ -17,7 +17,39 @@ namespace appPlantilla.Presentacion.pages
             {
                 if (Session["ingresar"] == null)
                     Response.Redirect("../../frmLogin.aspx");
-            }                 
+
+                string nomUsu = Session["Usuario"].ToString();
+                
+
+                string sql = "SELECT sucursal.nombre, sucursal.nit, sucursal.direccion, usuario.nombres, usuario.apellidos, usuario.correo FROM usuario INNER JOIN sucursal ON sucursal.idSucursal=usuario.idSucursal WHERE usuario.nombres = '" + nomUsu + "';";
+
+                SqlCommand comando = new SqlCommand(sql, con);
+                con.Open();
+                SqlDataReader leer = comando.ExecuteReader();
+                if (leer.Read() == true)
+                {
+                    txtTiendaNombre.Text = leer["sucursal.nombre"].ToString();
+                    txtTiendaNit.Text = leer["sucursal.nit"].ToString();
+                    txtTiendaDireccion.Text = leer["sucursal.direccion"].ToString();
+                    txtUsuarioNombre.Text = leer["usuario.nombres"].ToString();
+                    txtUsuarioApellido.Text = leer["usuario.apellidos"].ToString();
+                    txtUsuarioCorreo.Text = leer["usuario.correo"].ToString();
+                }
+                else
+                {
+                    Response.Write("No Se Encontro el Registro");
+                    txtTiendaNombre.Text = "";
+                    txtTiendaNit.Text = "";
+                    txtTiendaDireccion.Text = "";
+                    txtUsuarioNombre.Text = "";
+                    txtUsuarioApellido.Text = "";
+                    txtUsuarioCorreo.Text = "";
+                    txtUsuarioCorreo.Text = string.Empty; ;
+                }
+                con.Close();
+
+
+            }
         }
 
         protected void btnBuscarCliente_Click(object sender, EventArgs e)
@@ -102,7 +134,7 @@ namespace appPlantilla.Presentacion.pages
 
             if (txtProductoCantidad.Text == "" || txtProductoPrecio.Text == "")
             {
-                
+
                 Response.Write("No digito cantidad");
             }
             else

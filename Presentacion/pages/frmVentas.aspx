@@ -115,20 +115,24 @@
                                             <input id="txtIdTienda" type="hidden" value="0" />
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
+
+                                                    
                                                     <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Nombre:</label>
-                                                    <label class="form-control form-control-sm model mb-1" type="text" readonly="true" id="lbltiendanombre"></label>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtTiendaNombre" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
                                                     <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Nit:</label>
-                                                    <label class="form-control form-control-sm model mb-1" readonly="true" id="lbltiendaruc"></label>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtTiendaNit" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
                                                     <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Direccion:</label>
-                                                    <label class="form-control form-control-sm model mb-1" readonly="true" id="lbltiendadireccion"></label>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtTiendaDireccion" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -158,19 +162,19 @@
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
                                                     <label for="txtRucProveedor" class="col-form-label col-form-label-sm">Nombre:</label>
-                                                    <label class="form-control form-control-sm model mb-1" readonly="true" id="lblempleadonombre"></label>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtUsuarioNombre" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
                                                     <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Apellido:</label>
-                                                    <label class="form-control form-control-sm model mb-1" readonly="true" id="lblempleadoapellido"></label>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtUsuarioApellido" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
                                                     <label for="txtRazonSocialProveedor" class="col-form-label col-form-label-sm">Correo:</label>
-                                                    <label class="form-control form-control-sm model mb-1" readonly="true" id="lblempleadocorreo"></label>
+                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtUsuarioCorreo" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,8 +192,8 @@
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">
                                                     <label for="txtClienteND" class="col-form-label col-form-label-sm">Numero Documento: <span class="required">*</span> </label>
-                                                    <asp:TextBox runat="server" type="text" class="form-control form-control-sm model" ID="txtClienteNumDoc" name="RazonSocial" autocomplete="off"></asp:TextBox>
-                                                </div>
+                                                    <asp:TextBox runat="server" type="number" class="form-control form-control-sm model" ID="txtClienteNumDoc" name="RazonSocial" autocomplete="off" ReadOnly="true"></asp:TextBox>
+                                                </div> 
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group mb-3">

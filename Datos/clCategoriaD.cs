@@ -1,15 +1,18 @@
-﻿using appPlantilla.Entidades;
+﻿
+
+using appPlantilla.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using static appPlantilla.Datos.clConexion;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace appPlantilla.Datos
 {
     public class clCategoriaD
     {
-
         public static clCategoriaD _instancia = null;
 
         private clCategoriaD()
@@ -29,12 +32,12 @@ namespace appPlantilla.Datos
             }
         }
 
-        public List<clCategoriaE> mtdListar()
+        public List<clCategoriaE> ObtenerCategoria()
         {
             List<clCategoriaE> rptListaCategoria = new List<clCategoriaE>();
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
-                SqlCommand cmd = new SqlCommand("spListarCategoria", oConexion);
+                SqlCommand cmd = new SqlCommand("usp_ObtenerCategorias", oConexion);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 try
@@ -46,10 +49,9 @@ namespace appPlantilla.Datos
                     {
                         rptListaCategoria.Add(new clCategoriaE()
                         {
-                            idCategoria = Convert.ToInt32(dr["idCategoria"].ToString()),
-                            descripcion = dr["descripcion"].ToString(),
-                            activo = Convert.ToBoolean(dr["activo"].ToString())
-
+                            IdCategoria = Convert.ToInt32(dr["IdCategoria"].ToString()),
+                            Descripcion = dr["Descripcion"].ToString(),
+                            Activo = Convert.ToBoolean(dr["Activo"].ToString())
                         });
                     }
                     dr.Close();
@@ -65,23 +67,15 @@ namespace appPlantilla.Datos
             }
         }
 
-
-
-
-
-
-
-
-
-        public bool mtdRegistrar(clCategoriaE oCategoria)
+        public bool RegistrarCategoria(clCategoriaE oCategoria)
         {
             bool respuesta = true;
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("spRegistrarCategoria", oConexion);
-                    cmd.Parameters.AddWithValue("descripcion", oCategoria.descripcion);
+                    SqlCommand cmd = new SqlCommand("usp_RegistrarCategoria", oConexion);
+                    cmd.Parameters.AddWithValue("Descripcion", oCategoria.Descripcion);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
@@ -100,7 +94,7 @@ namespace appPlantilla.Datos
             return respuesta;
         }
 
-        public bool mtdEditar(clCategoriaE oCategoria)
+        public bool ModificarCategoria(clCategoriaE oCategoria)
         {
             bool respuesta = true;
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
@@ -133,15 +127,15 @@ namespace appPlantilla.Datos
 
         }
 
-        public bool mtdEliminar(int idCategoria)
+        public bool EliminarCategoria(int IdCategoria)
         {
             bool respuesta = true;
             using (SqlConnection oConexion = new SqlConnection(Conexion.CN))
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("spEliminarCategoria", oConexion);
-                    cmd.Parameters.AddWithValue("idCategoria", idCategoria);
+                    SqlCommand cmd = new SqlCommand("usp_EliminarCategoria", oConexion);
+                    cmd.Parameters.AddWithValue("IdCategoria", IdCategoria);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
@@ -162,15 +156,5 @@ namespace appPlantilla.Datos
             return respuesta;
 
         }
-
-
-
-
-
-
-
-
-
-
     }
 }

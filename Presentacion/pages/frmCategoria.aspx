@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Presentacion/Site1.Master" AutoEventWireup="true" CodeBehind="frmCategoria.aspx.cs" Inherits="appPlantilla.Presentacion.pages.frmCategoria" %>
 
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
     <div class="row">
             <div class="col-sm-12">
                <div class="card">
@@ -74,8 +74,6 @@
         </div>
       </div>
     </div>
-    <script src="../../assets/js/frmCategoria.js"></script>
-
-
-
+    <script src="Controlador/frmCategoria/frmCategoria.js"></script>
+    
 </asp:Content>

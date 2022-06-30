@@ -1,5 +1,9 @@
-﻿using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
 
 namespace appPlantilla.Datos
 {
@@ -8,7 +12,7 @@ namespace appPlantilla.Datos
 
 
 
-        SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = pymes; Integrated Security = True");
+        SqlConnection conexion = new SqlConnection("Data Source =.; Initial Catalog = bdPymes; Integrated Security = True");
 
 
         public SqlConnection LeerCadena()
@@ -42,7 +46,7 @@ namespace appPlantilla.Datos
 
         public class Conexion
         {
-            public static string CN = "Data Source=.;Initial Catalog=pymes;Integrated Security=True";
+            public static string CN = "Data Source=.;Initial Catalog=bdpymes;Integrated Security=True";
         }
 
 
